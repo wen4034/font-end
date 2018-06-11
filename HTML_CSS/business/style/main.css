@@ -1,0 +1,89 @@
+
+/*公用*/
+.comWidth{width: 1000px;margin: 0 auto;}
+.leftArea{float: left;}
+.rightArea{float: right;}
+
+/* topBar*/
+.topBar{height: 31px; background-color: #F7F7F7; line-height: 31px;}
+.collection{background:url("../img/tag.png") left center
+no-repeat;padding-left: 19px;font-weight:bold }
+.topBar a:hover{color:red}
+
+/*logBar*/
+.logoBar{height: 85px;background-color: #1D7AD9 }
+.logo{padding-left: 41px;padding-top: 13px}
+
+/*search*/
+.search_box{width: 430px; padding-top: 23px;padding-left: 185px}
+.search_text{width: 350px;height: 35px; line-height: 35px\9;  padding:0 5px ;background-color: #FFF}
+.search_btn{width: 70px;height: 35px;font-size: 14px;font-family: "Microsoft YaHei UI";
+background-color: #FF8C00;color: #FFF;cursor: pointer}
+/*购物车*/
+.shopCar{width: 145px;height: 35px;background-color: #FF8C00; margin-top: 23px;
+font: 14px/35px "Microsoft YaHei UI"; color:#FFF; margin-right: 59px}
+.shopText{color: #FFF;height: 100%; width: 87px;border-right: #E27A00 solid 1px;background: url("../img/shop_car.png") 10px center no-repeat;
+    text-indent: 40px;  }
+.shopNum{width: 19px;height: 35px; border-left: #FF9C01 solid 1px; background:
+        url("../img/sub.png") 33px center no-repeat; text-align: right;padding-right: 29px}
+/*导航*/
+.navbox{ height: 35px;background-color:#1369C0;color: #FFFFFF }
+.shopClass{ width: 190px;/*注意，会留下后患*/  position:relative}
+.shopClass h3{text-align: center ;line-height: 35px; }
+.shopClass i{ width: 11px; height: 7px;overflow:hidden; background: url("../img/down.png") left center no-repeat;
+display: inline-block;margin-left: 11px;}
+.nav,.shopClass h3{font-family: "Microsoft YaHei UI"}
+.nav{line-height: 35px}
+.nav li{float: left}
+.nav a{height: 35px;display: inline-block;padding: 0 35px;color: #FFFFFF}
+.nav .active{background-color: #4593FD}
+/*商品弹出列表*/
+.shopClass_show{background-color: #4593FD; position: absolute; left: 0px;top: 35px; width: 100%}
+.shopClass_item{ padding: 14px 10px; border-bottom: #3487F2 solid 1px; border-top: #5AA1FE solid 1px }
+.shopClass_item dt {height: 22px;background: url("../img/shop_sj.png") right center no-repeat}
+.shopClass_item .b{ font:  14px/1 "Microsoft YaHei UI","微软雅黑";}
+.shopClass_item a{color: #FFFFFF;}
+.shopClass_item .aLink{width: 38px;height: 20px;background: url("../img/aLink.png") left center no-repeat;display: inline-block;
+text-align: center;line-height: 20px;text-decoration: underline}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
