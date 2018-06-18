@@ -118,17 +118,48 @@ color: #181818;line-height: 30px}
 .web{padding-top: 30px;}
 .web img{margin: 0 12px}
 .hr_25 {height: 25px}
+/*产品分类*/
+.product .leftArea{width: 185px}
+.product .rightArea{width: 810px}
+.product .banner_bar{float: none}
+.product  .item{width: 25%;margin-bottom: 1px;margin-top: 20px}
+/*产品分类导航*/
+.leftNav{ background-color: #F3F3F3; border: #D7D7D7 solid 1px}
+.nav_title{height: 34px; line-height: 34px;
+    font-size: 14px; border-bottom: #D7D7D7 solid 1px;text-align:center}
+.nav_cont{padding: 0 18px 4px;border-bottom: #D7D7D7 1px solid;margin-bottom: -1px;}
+.nav_cont h3{font-size: 12px;height: 30px;line-height: 30px}
+.navCont_list{line-height: 25px; text-align: center}
+.navCont_list li{float: left;width: 50%}
+.vertical li{width: auto;float: none;padding-left: 8px}
+.vertical .nav_title,
+.vertical .nav_cont h3{font-family: "Microsoft YaHei UI";font-size: 14px}
+/*商品*/
+.product_title{height: 34px;border-bottom: #cccccc solid 2px}
+.product_title h3{ width: 180px; border-bottom: #096DBA solid 2px; height: 34px; line-height: 34px;text-indent: 9px;}
+/*商品*/
+.item{ float:left}
+.img_item{height: 170px; text-align: center; padding-top: 12px}
+.img_item img{}
+.item p{line-height: 20px ;padding-left: 10px;}
+.item a{color:#000;}
+.item a:hover{text-decoration: underline}
+.money{color:#D4105A;font-weight: bold;margin-top: 10px}
+.stars{width: 13px;height: 12px;overflow: hidden;background: url("../img/collection.png") left top
+ no-repeat;display: inline-block;margin-top: 1px}
+.hr_15{height: 15px;}
 
-
-
-
-
-
-
-
-
-
-
+/*筛选*/
+.screening{border-bottom: #cccccc solid 1px}
+.screening dt{line-height: 32px;width: 74px;text-align: right;float: left;margin-right: 42px}
+.limit{width: 55px;float: left;line-height: 32px}
+.screening .active{background-color: #1D7AD9;padding: 2px;color: #FFFFFF}
+.screening a{padding: 2px;}
+.screening_list {line-height: 32px;width: 626px;float: left}
+.screening li{ width: 20%;float: left}
+.screen_more{border: #CCC solid 1px; height: 23px;line-height: 23px;margin-top: 4px;float: left;
+padding-right: 11px;padding-left: 11px;margin-right: 10px}
+.screen_more a{background: url("../img/sj_grey.png") right center no-repeat; padding-right: 14px}
 
 
 
