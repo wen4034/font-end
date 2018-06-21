@@ -265,7 +265,7 @@ background-color: #F3F3F3;}
 .recommend .item{float: none;height: auto}
 .recommend .money{padding-top: 0px;}
 /*詳細介紹*/
-.des_infoContent{border: #CCC solid 1px;background-color: #FFF}
+.des_infoContent,.des_content_tit{border: #CCC solid 1px;background-color: #FFF}
 .des_tit{height: 39px;border-bottom: #CCC solid 1px;background: url("../img/jpg/instro.jpg") left top repeat-x;}
 .des_tit li{float: left;width: 50%;font:14px/39px "宋体"; text-align: center;border-left: #CCC solid 1px;margin-left: -1px}
 .des_tit .active{background-color: #0479CA;font-weight: bold;color: #FFF;position: relative}
@@ -280,6 +280,50 @@ position: relative;padding-right: 8px;}
 .info_text p{line-height: 22px;font-size:14px;color:#656565;}
 .hr_45{height: 45px;}
 .center{display: inline-block;margin: 0 auto}
+
+/*商品评价*/
+.shopDes_tit{line-height: 38px;height: 38px;font-size: 14px;color: #656565;padding-left: 10px;}
+.score{font-family: "Microsoft YaHei UI";float: left;margin-right: 10px;}
+.score_box{padding-left: 10px;height: 119px;}
+.score em{font-size: 18px;color: #65657D;font-style: normal;}
+.score span{font-size: 50px;color: #FF8F00;}
+.score_speed{float: left;width: 450px;color: #FFF;line-height:16px;
+font-size: 12px;margin-top: 12px;position: relative}
+.score_speed_text{overflow: hidden;margin-bottom:10px;height: 16px;background-color: #BDBDBD;}
+.score_speed_text li{float: left}
+.score_speed_text .speed_01{width: 114px;text-indent: 26px;}
+.score_speed_text .speed_02{width: 82px;}
+.score_speed_text .speed_03{width: 76px;}
+.score_speed_text .speed_04{width: 65px;}
+.score_num{position: absolute;left: 94%;top:-21px;text-align: center;width:25px; height: 14px;background-color:#7F7F7F;color: #FFF}
+.score_num i{border-width:6px;border-style: solid dashed dashed;border-color: #7F7F7F transparent transparent;width: 0;height: 0;
+    margin-left: 7px;  margin-top : -2px;display: block;}
+.score_speed p{color: black}
+/*满意切换*/
+.review_tab{height: 32px;background-color: #F2F2F2}
+.review{line-height: 32px;height: 100%;padding-left: 20px;}
+.review li{float: left;height: 100%;margin-right: 40px;}
+.review li a{float: left;display: inline-block;height: 30px;line-height: 30px;padding: 0 5px;}
+.review .active{color: #317DE6;font-weight: bold;border-bottom: #317DE6 solid 2px;margin-bottom: -2px;position: relative}
+
+.review_sort{padding:5px 5px 0 0;}
+.review_sort a{display: inline-block;line-height: 20px;height: 20px;border: solid 1px #ccc;padding: 0 20px 0 6px;background: url("../img/sort.png")
+58px center no-repeat}
+.review_userHead{width: 170px}
+.review_list{padding-top: 18px;margin-bottom: 10px;}
+.review_user{width: 60px; text-align: center;margin-left: 40px;}
+.review_user img{width: 60px;height: 60px;display: block}
+.review_user p{line-height: 20px;}
+.review_cont{padding-left: 170px;}
+.startsBox .stars{margin-top: 1px;}
+.stars_text{font-weight: bold;padding-left: 10px;}
+.review_t{height: 24px;padding-top: 5px;}
+.review_cont p{line-height: 30px;}
+
+
+
+
+
 
 
 
