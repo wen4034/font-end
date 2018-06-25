@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9bcb686-c166-4b94-8fc2-18f9c86b644c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML_CSS/business/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML_CSS/business/购物车.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HTML_CSS/business/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML_CSS/business/login.html" afterPath="$PROJECT_DIR$/HTML_CSS/business/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML_CSS/business/style/main.css" afterPath="$PROJECT_DIR$/HTML_CSS/business/style/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +20,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML_CSS/business/login.html">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML_CSS/business/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="125">
+              <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HTML_CSS/business/style/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="403" column="48" lean-forward="false" selection-start-line="403" selection-start-column="48" selection-end-line="403" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -63,8 +73,9 @@
         <option value="$PROJECT_DIR$/HTML_CSS/商品介绍.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/business/商品介绍.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/business/购物车.html" />
-        <option value="$PROJECT_DIR$/HTML_CSS/business/style/main.css" />
         <option value="$PROJECT_DIR$/HTML_CSS/business/login.html" />
+        <option value="$PROJECT_DIR$/HTML_CSS/business/register.html" />
+        <option value="$PROJECT_DIR$/HTML_CSS/business/style/main.css" />
       </list>
     </option>
   </component>
@@ -75,10 +86,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-62" />
-    <option name="y" value="273" />
-    <option name="width" value="1386" />
-    <option name="height" value="743" />
+    <option name="x" value="-28" />
+    <option name="y" value="341" />
+    <option name="width" value="1273" />
+    <option name="height" value="671" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,18 +241,18 @@
       <workItem from="1528724097587" duration="17885000" />
       <workItem from="1528896545515" duration="44916000" />
       <workItem from="1529719295953" duration="3859000" />
-      <workItem from="1529839453958" duration="8812000" />
+      <workItem from="1529839453958" duration="14107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77312000" />
+    <option name="totallyTimeSpent" value="82607000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-62" y="273" width="1386" height="743" extended-state="1" />
+    <frame x="-28" y="341" width="1273" height="671" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18175182" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18138425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -480,14 +491,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/business/style/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="375" column="30" lean-forward="false" selection-start-line="375" selection-start-column="30" selection-end-line="375" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML_CSS/business/购物车.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -547,8 +550,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML_CSS/business/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="83">
+          <caret line="53" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/business/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/business/style/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="403" column="48" lean-forward="false" selection-start-line="403" selection-start-column="48" selection-end-line="403" selection-end-column="48" />
           <folding />
         </state>
       </provider>
