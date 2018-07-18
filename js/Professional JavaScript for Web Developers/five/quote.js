@@ -201,7 +201,7 @@ alert(callSum2(10,10));
 
 /**apply call**/
 window.color="red";
-var 0={color:"blue"};
+var o={color:"blue"};
 
 function  sayColor() {
     alert(this.color);
