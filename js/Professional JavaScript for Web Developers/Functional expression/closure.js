@@ -72,3 +72,149 @@ var object={
         }
     }
 };
+
+//my object
+alert(object.getNameFunc());
+
+
+////通过that=this 可以返回外部作用域
+var name="The Window";
+var object={
+    name : "My Object",
+
+    getNameFunc : function () {
+        var that=this;
+        return function () {
+            return that.name;
+        }
+    }
+};
+
+//js真的是好奇怪，各种搞不懂
+
+/**
+ * 内存泄漏
+ */
+function assignHandler() {
+    var element=document.getElementById("someElement");
+    element.onclick=function () {
+        alert(element.id);
+    }
+};
+
+
+
+/**
+ * 模仿块级作用域
+ */
+
+function outputNumbers(count) {
+
+    for(var i=0;i<count;i++){
+        alert(i);
+    }
+    alert(i);//记数
+};
+//i的值是不会改变的
+
+//私有作用域
+function outputNumbers(count) {
+    (function () {
+        for (var i=0;i<count;i++){
+            alert(i);
+        }
+    })();
+
+    alert(i);//错误
+};
+//用完立即销毁
+/**
+ * 私有变量
+ */
+
+function  add(num1,num2) {
+    var sum=num1+num2;
+    return sum;
+}
+
+function MyObject() {
+    //私有变量和私有函数
+    var privateVariable=10;
+    
+    function privateFunction() {
+         return false;
+    }
+
+    //特权方法
+    this.publicMethod=function () {
+        privateVariable++;
+        return privateFunction();
+    }
+    
+};
+
+
+function  Person(name) {
+    this.getName=function () {
+         return name;
+    };
+    
+    this.setName=function (value) {
+        name=value;
+    };
+}
+
+var person=new Person("Nicholas");
+alert(person.getName());
+
+person.insertNode("Greg");
+alert(person.getName());
+
+
+/**
+ * 静态私有变量
+ */
+
+(function () {
+    //私有变量和私有函数
+    var privateVariable=10;
+
+    function privateFunction() {
+        return false;
+    }
+
+    MyObject=function () {
+
+    };
+
+    MyObject.prototype.publicMethod=function () {
+        privateVariable++;
+        return privateFunction();
+    }
+
+})();
+
+
+/**
+ * 模块模式
+ */
+
+var application=function () {
+    //私有变量和函数
+    var components=new Array();
+    
+    //初始化
+    components.push(new b());
+    
+    return{
+         getComponentCount : function () {
+             return components.length;
+         },
+        registerComponent : function (component) {
+            if(typeof  component =="object"){
+                 components.push(component);
+            }
+        }
+    };
+}();
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="window.js"></script>
+<script type="text/javascript" src="chplayer/chplayer.js"></script>
+<div id="video" style="width:600px;height:400px;"></div>
+<script type="text/javascript">
+    var videoObject = {
+        container: '#video',//“#”代表容器的ID，“.”或“”代表容器的class
+        variable: 'player',//该属性必需设置，值等于下面的new chplayer()的对象
+        video:'http://video2.jiagew762.com:8091/20180720/wD2Cermc/index.m3u8'//视频地址
+    };
+    var player=new chplayer(videoObject);
+</script>
+
+
+</body>
+
+<frameset>
+
+</frameset>
+</html>
