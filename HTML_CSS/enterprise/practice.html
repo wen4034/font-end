@@ -2,9 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>慕课网</title>
+    <link href="css/practice.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/setHomeSetFav.js"></script>
+    <script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script><!--引入myFocus库-->
+    <script type="text/javascript">
+        myFocus.set({id: 'boxID'});
+    </script>
 </head>
 <body>
+<div class="overall">
+    <div class="nav">
+        <img src="img/logo.jpg">
+        <ul class="nav_right">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">产品特色</a></li>
+            <li><a href="#">解决方案</a></li>
+            <li><a href="#">产品价格</a></li>
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="picBox">
+        <div id="boxID" class="picBox"><!--焦点图盒子-->
+            <div class="loading"><img src="http://img.mukewang.com/53edad8c000175cb00300029.jpg" alt="请稍候..."/></div>
+            <!--载入画面(可删除)-->
+            <div class="pic"><!--内容列表(li数目可随意增减)-->
+                <ul>
+                    <li><a href="#"><img src="http://img.mukewang.com/53edad3e0001afad10000318.jpg" text="详细描述1"/></a>
+                    </li>
+                    <li><a href="#"><img src="http://img.mukewang.com/53edad2c0001b61310000314.jpg" text="详细描述2"/></a>
+                    </li>
+                    <li><a href="#"><img src="http://img.mukewang.com/53edad1600019ae910000310.jpg" text="详细描述3"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="news">
+            <div class="news_title">热点新闻</div>
+            <div class="news_message" id="message"><a href="#">王宝强表妹揭秘：名校毕业两年当上CEO，是她先发现马蓉出轨</a></div>
+        </div>
+        <div class="ad clearfix">
+            <div class="ad_jpg">
+                <a href="#">
+                    <img src="img/bs.jpg">
+                </a>
+                <p>
+                    <a href="#">玩转BootStrap</a>
+                </p>
+            </div>
+            <div class="ad_jpg">
+                <a href="#">
+                    <img src="img/css.jpg">
+                </a>
+                <p>
+                    <a href="#">企业网站实例</a>
+                </p>
+            </div>
+            <div style="margin-right: 0px;" class="ad_jpg">
+                <a href="#">
+                    <img src="img/js.jpg">
+                </a>
+                <p>
+                    <a href="#">JavaScription基础</a>
+                </p>
+            </div>
+        </div>
+        <div class="ad">
+            <div class="content_message">
+                <h2 class="message_title">新闻中心</h2>
+                <div class="content_news">
+                    <ul>
+                        <li class="clearfix">
+                            <span>8月23日</span>
+                            <h2>学习计划之"Android工程师初养成"</h2>
+                            <p>想成为Android工程师？想开发一款专属App?没有任何基础的你，应该从何学起?</p>
+                        </li>
+                        <li class="clearfix">
+                            <span>8月23日</span>
+                            <h2>学习计划之"Android工程师初养成"</h2>
+                            <p>想成为Android工程师？想开发一款专属App?没有任何基础的你，应该从何学起?</p>
+                        </li>
+                        <li class="clearfix">
+                            <span>8月23日</span>
+                            <h2>学习计划之"Android工程师初养成"</h2>
+                            <p>想成为Android工程师？想开发一款专属App?没有任何基础的你，应该从何学起?</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_message">
+                <h2 class="message_title">热门活动</h2>
+                <div class="activity">
+                    <img src="img/2048.jpg">
+                    <p><a href="#">慕课网2048源码征集</a></p>
+                    <p><a href="#">慕课网2048源码征集</a></p>
+                    <p><a href="#">慕课网2048源码征集</a></p>
+                    <p><a href="#">慕课网2048源码征集</a></p>
+                    <p><a href="#">慕课网2048源码征集</a></p>
+                </div>
+            </div>
+            <div class="content_message" style="margin-right: 0px;">
+                <h2 class="message_title">联系我们</h2>
+                <div class="content_phone">
+                    <p>讲师招募</p>
+                    <p>邹同学</p>
+                    <p>电话：18911888156</p>
+                    <p>QQ：576264119</p>
+                    <p>E-mail:daisy@imooc.com</p>
+                    <br/>
+                    <p>网站合作</p>
+                    <p>吕同学</p>
+                    <p>QQ:12312542</p>
+                    <p>E-mail:daisy@imooc.com</p>
+                </div>
+            </div>
 
-</body>
+        </div>
+    </div>
+    <div class="foot">
+        <p>Copyright © 2018 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+    </div>
+</div>
 </html>
