@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+            position: relative;
+            width: 200px;
+            left: 50px;
+            top: 50px;
+        }
+
+        ul{
+            padding: 15px 0;
+            margin: 0;
+            list-style: none;
+            background: #6c6669;
+            color: #FFFFFF;
+            border-right-width: 0;
+        }
+
+        li{
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+
+        }
+
+        li:active{
+            background: #999395;
+        }
+
+        li span:hover{
+            color: #c81623;
+        }
+
+        .none{
+            display: none;
+        }
+
+        #sub {
+            width: 600px;
+            position: absolute;
+            border: 1px solid #F7F7F7;
+            background: #F7F7F7;
+            box-shadow:2px 0 5px rgba(0,0,0,.3);
+            top: 0;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .sub_content a{
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+        }
+
+        .sub_content dd a{
+            border-left:  1px  solid #e0e0e0;
+            padding: 0 10px;
+            margin: 4px 0;
+        }
+
+        .sub_content dl{
+            float: left;
+        }
+
+        .sub_content dt{
+            float: left;
+            width: 70px;
+            font-weight: bold;
+            clear: left;
+            position: relative;
+        }
+
+        .sub_content dd{
+            float: left;
+            margin-left:5px;
+            border-top: 1px solid #eee;
+            margin-bottom: 5px;
+        }
+
+        .sub_content dd i {
+            width: 4px;
+            height: 14px;
+            font: 400 9px/14px consolas;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <ul>
+        <li data-id="a">
+            <span>家用电器</span>
+        </li>
+        <li  data-id="b">
+            <span>手机 / 运营商 / 数码</span>
+        </li>
+        <li  data-id="c">
+            <span>电脑办公</span>
+        </li>
+        <li  data-id="d">
+            <span>家居 / 家具 / 家装 /厨具</span>
+        </li>
+        <li  data-id="e">
+            <span>男装 / 女装 / 童装 / 内衣</span>
+        </li>
+        <li  data-id="f">
+            <span>个护化妆 / 清洁用品 / 奢侈品</span>
+        </li>
+        <li  data-id="g">
+            <span>运动 / 户外 / 钟表</span>
+        </li>
+        <li  data-id="h">
+            <span>汽车 / 汽车用品 </span>
+        </li>
+        <li  data-id="i">
+            <span>女婴 / 玩具乐器</span>
+        </li>
+        <li  data-id="j">
+            <span>食品 / 酒类 / 生鲜 / 特产</span>
+        </li>
+        <li  data-id="k">
+            <span>医药保健</span>
+        </li>
+    </ul>
+    <div id="sub" class="">
+        <div id="a" class="sub_content_none">
+            <dl>
+                <dt>
+                    <a href="#">电视<i>&gt;</i></a>
+                </dt>
+                <dd>
+                    <a href="#">合资品牌</a>
+                    <a href="#">国产品牌</a>
+                    <a href="#">互联网品牌</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+</body>
+</html>
