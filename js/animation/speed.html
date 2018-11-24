@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+
+            <style>
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                div {
+                    width: 200px;
+                    height: 200px;
+                    background-color: #c81623;
+                    position: relative;
+                    left: -200px;
+                }
+
+                span {
+                    display: inline-block;
+                    padding: 5px;
+                    text-align: center;
+                    width: 20px;
+                    height: 45px;
+                    background-color: #5AA1FE;
+                    position: absolute;
+                    top: 62px;
+                    left: 200px;
+                }
+
+            </style>
+
+            <script>
+                window.onload = function () {
+                    var oDiv = document.getElementById("div1");
+                    oDiv.onmouseover = function () {
+                        startMove(0);
+                    }
+
+                    oDiv.onmouseout = function () {
+                        startMove(-200);
+                    }
+
+                }
+
+                var timer = null;
+
+                function startMove(iTarget) {
+                    clearInterval(timer);
+                    var oDiv = document.getElementById("div1");
+                    timer = setInterval(function () {
+                        var speed = (iTarget - oDiv.offsetLeft) / 20;
+                        if (oDiv.offsetLeft == iTarget) {
+                            clearInterval(timer);
+                        } else {
+                            oDiv.style.left = oDiv.offsetLeft + speed + 'px';
+                        }
+                    }, 30)
+                }
+
+            </script>
+        </head>
+<body>
+<div id="div1">
+    <span id="share">分享</span>
+</div>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #c81623;
+            filter: alpha(opacity:30);
+            opacity: 0.3;
+            margin: 20px;
+            float: left;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            var oDiv = document.getElementsByTagName('div');
+            for (var i = 0; i < oDiv.length; i++) {
+                oDiv[i].timer = null;
+                oDiv[i].alpha = 30;
+                oDiv[i].onmouseover = function () {
+                    startMove(this, 100);
+                }
+                oDiv[i].onmouseout = function () {
+                    startMove(this, 30);
+                }
+            }
+
+            // oDiv.onmouseover = function () {
+            //     startMove(100);
+            // }
+            //
+            // oDiv.onmouseout = function () {
+            //     startMove(30);
+            // }
+        }
+
+        //  var timer = null;
+        // var alpha = 30;
+
+        function startMove(obj, iTarget) {
+            // var oDiv = document.getElementsByTagName('div');
+            clearInterval(obj.timer);
+
+
+            obj.timer = setInterval(function () {
+
+                var speed = 0;
+                if (obj.alpha > iTarget) {
+                    speed = -10;
+                } else {
+                    speed = 10;
+                }
+
+                if (obj.alpha == iTarget) {
+                    clearInterval(obj.timer);
+                } else {
+                    obj.alpha += speed;
+                    obj.style.filter = 'alpha(opacity:' + obj.alpha + ')';
+                    obj.style.opacity = obj.alpha / 100;
+                }
+            }, 30)
+
+        }
+
+    </script>
+</head>
+<body>
+<div id="div1">
+
+</div>
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+</html>
