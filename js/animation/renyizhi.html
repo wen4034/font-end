@@ -33,34 +33,54 @@
 
         window.onload = function () {
 
-            var aLi = document.getElementsByTagName('li');
+            /*            var aLi = document.getElementsByTagName('li');
 
-            for (var i = 0; i < aLi.length; i++) {
-                aLi[i].timer = null;
-                aLi[i].onmouseover = function () {
-                    startMove(this, 400);
-                }
+                        for (var i = 0; i < aLi.length; i++) {
+                            aLi[i].timer = null;
+                            aLi[i].onmouseover = function () {
+                                startMove(this, 400);
+                            }
 
-                aLi[i].onmouseout = function () {
-                    startMove(this, 200);
-                }
+                            aLi[i].onmouseout = function () {
+                                startMove(this, 200);
+                            }
+                        }*/
+
+            var Li1 = document.getElementById('li1');
+            var Li2 = document.getElementById('li2');
+
+            Li1.onmouseover = function () {
+                startMove(this, 400, 'width');
             }
+
+            Li1.onmouseout = function () {
+                startMove(this, 100, 'width');
+            }
+
+            Li2.onmouseover = function () {
+                startMove(this, 400, 'height');
+            }
+
+            Li2.onmouseout = function () {
+                startMove(this, 100, 'height');
+            }
+
 
         }
 
         //var timer = null;
 
-        function startMove(obj, iTarget,) {
+        function startMove(obj, iTarget, attr) {
             clearInterval(obj.timer);
             obj.timer = setInterval(function () {
-                var icur = parseInt(getStyle(obj, 'width'));
+                var icur = parseInt(getStyle(obj, attr));
                 var speed = (iTarget - icur) / 8;
                 speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
 
                 if (icur == iTarget) {
                     clearInterval(obj.timer);
                 } else {
-                    obj.style['width'] = icur + speed + 'px';
+                    obj.style[attr] = icur + speed + 'px';
                     //  alert(obj.style.width);
                 }
             }, 30)
@@ -75,15 +95,13 @@
         }
 
 
-
     </script>
 
 </head>
 <body>
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li id="li1"></li>
+    <li id="li2"></li>
 </ul>
 </body>
 </html>
