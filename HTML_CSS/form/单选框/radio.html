@@ -62,11 +62,42 @@
             left: 0;
         }
 
-        .type dl .selected b {
+        .type dl dd a:hover b {
+            background-position: -15px -118px;
+        }
+
+        .type dl .selected b, .type dl .selected a:hover b {
             background-position: -15px -218px;
         }
 
     </style>
+
+
+    <script>
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function show(index) {
+            var ddList = $("type").getElementsByTagName("dd");
+
+
+            // for (i in ddList) {
+            //     ddList[i].className = null;
+            // }
+
+            for (var i = 0; i < ddList.length; i++) {
+                ddList[i].className = null;
+            }
+
+            ddList[index].className = 'selected'
+
+        }
+
+
+    </script>
+
 
 </head>
 
