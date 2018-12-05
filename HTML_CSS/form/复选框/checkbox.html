@@ -6,41 +6,109 @@
 <link rel="stylesheet" type="text/css" href="css/public.css"/>
 <style type="text/css">
 body{font:12px/22px "微软雅黑";}
-.checkbox{width:520px;height:30px;border:1px solid #DFDFDF;border-width:1px 0 1px;margin:20px auto;padding-left:10px;overflow:hidden;}
-.checkbox form{height:30px;}
-.checkbox form input{display:none;}
-.checkbox form label{line-height:30px;display:block;}
-.checkbox ul li{float:left;margin-right:10px;}
 
-.costom-checkbox{position:relative;}
-.custom-checkbox label{display:block;position:relative;padding-right:1em;line-height:1;padding:0 0 0 25px;cursor:pointer;}
+.checkbox {
+    margin: 20px auto;
+    width: 520px;
 
-.custom-checkbox label{background:url(images/checkbox.gif) no-repeat -10px -13px;}
-.custom-checkbox label.hover,.custom-checkbox label.focus{background-position:-10px -113px;}
-.custom-checkbox label.checked{background-position:-10px -213px;}
-.custom-checkbox label.checkedHover,.custom-checkbox label.checkedFocus{background-position:-10px -313px;}
-.custom-checkbox label.focus{outline:1px dotted #ccc;}
+}
+
+.checkbox ul {
+    height: 30px;
+    overflow: hidden;
+    border: 1px solid #D4D4D4;
+    border-width: 1px 0;
+    padding-left: 10px;
+}
+
+.checkbox ul li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    position: relative;
+    text-indent: 1px;
+}
+
+.checkbox ul li input {
+    display: none;
+}
+
+.checkbox ul li label {
+    padding-left: 23px;
+}
+
+.checkbox ul li b {
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    background: url("images/checkbox.gif") no-repeat -10px -18px;
+}
+
+.checkbox ul li:hover b {
+    background-position: -10px -118px;
+}
+
+.checkbox ul .select b, .checkbox ul .select:hover b {
+    background-position: -10px -218px;
+}
+
+
+
 </style>
-<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>		
-<script type="text/javascript" src="js/custominput.js"></script>	
-<script type="text/javascript">
-$(function(){
-	
-	$('input').customInput();
-	
-	$('.toggle').each(function(){
-		$('div:first',this).addClass('first');
-		$('div:last',this).addClass('last');	
-	}); 
-});
-</script>
+    <script type="text/javascript">
+
+        function createTag() {
+            var li = document.getElementById("checkList").getElementsByTagName("li");
+
+            for (var i = 0; i < li.length; i++) {
+                var label = li[i].getElementsByTagName("label");
+                var b = document.createElement("b");
+                li[i].insertBefore(b, label[0]);
+
+            }
+        }
+
+        function checkList() {
+            var li = document.getElementById("checkList").getElementsByTagName("li");
+            for (var i = 0; i < li.length; i++) {
+                li[i].onclick = function () {
+                    if (this.className == 'select') {
+                        this.className = null;
+                    } else {
+                        this.className = 'select';
+                    }
+                }
+
+            }
+
+        }
+
+        function addLoadEvent(fn) {
+            var oldOnload = window.onload;
+            if (typeof window.onload != "function") {
+                window.onload = fn;
+            } else {
+                window.onload = function () {
+                    oldOnload();
+                    fn();
+                }
+            }
+        }
+
+        addLoadEvent(createTag);
+        addLoadEvent(checkList);
+
+    </script>
 </head>
 
 <body>
 <div class="checkbox">
 	<form action="#" method="post" name="typeForm">
-    	<ul>
-            <li><input type="checkbox" name="type" id="x" value=""/><label for="x">消费者保障</label></li>
+        <ul id="checkList">
+            <li class="select"><input type="checkbox" name="type" id="x" value=""/><label for="x">消费者保障</label></li>
             <li><input type="checkbox" name="type" id="po" value=""/><label for="po">破损补寄</label></li>
             <li><input type="checkbox" name="type" id="s" value=""/><label for="s">7天退换</label></li>
             <li><input type="checkbox" name="type" id="z" value=""/><label for="z">正品保障</label></li>
