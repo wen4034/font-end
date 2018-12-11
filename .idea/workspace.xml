@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9bcb686-c166-4b94-8fc2-18f9c86b644c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/HTML_CSS/xiala_menu/css/public.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML_CSS/xiala_menu/menuok.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML_CSS/xiala_menu/变幻.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_CSS/form/单选框/radio.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_CSS/form/单选框/radio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_CSS/form/复选框/checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_CSS/form/复选框/checkbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_CSS/form/下拉列表/select_finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_CSS/form/下拉列表/select_finished.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,12 +24,12 @@
     <session id="746062486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.27" value="3" />
-          <entry key="project.open.time.29" value="2" />
-          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.29" value="3" />
+          <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.34" value="1" />
@@ -38,28 +39,28 @@
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="36" />
+          <entry key="css" value="38" />
           <entry key="gif" value="18" />
           <entry key="htm" value="1" />
-          <entry key="html" value="117" />
+          <entry key="html" value="125" />
           <entry key="jpg" value="21" />
           <entry key="js" value="12" />
           <entry key="php" value="2" />
-          <entry key="png" value="14" />
+          <entry key="png" value="16" />
           <entry key="ts" value="3" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="36" />
-          <entry key="HTML" value="118" />
-          <entry key="Image" value="53" />
+          <entry key="CSS" value="38" />
+          <entry key="HTML" value="126" />
+          <entry key="Image" value="55" />
           <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="3" />
@@ -69,14 +70,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2247" />
-          <entry key="html" value="10622" />
+          <entry key="html" value="12730" />
           <entry key="js" value="235" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2247" />
-          <entry key="HTML" value="10622" />
+          <entry key="HTML" value="12730" />
           <entry key="JavaScript" value="235" />
         </counts>
       </usages-collector>
@@ -88,19 +89,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/text.html">
+        <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/menuok.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="74" selection-start-line="74" selection-end-line="76" selection-end-column="4" />
+            <state relative-caret-position="570">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -152,8 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HTML_CSS/business/style/reset.css" />
-        <option value="$PROJECT_DIR$/HTML_CSS/enterprise/s.html" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/three/ParameterTest.js" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/three/index.html" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/index.html.js" />
@@ -196,13 +186,15 @@
         <option value="$PROJECT_DIR$/HTML_CSS/dom_/第四章/isXML/example1.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/form/redio.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/form/下拉列表/css/public.css" />
-        <option value="$PROJECT_DIR$/HTML_CSS/form/下拉列表/select_finished.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/form/单选框/css/radip.css" />
         <option value="$PROJECT_DIR$/HTML_CSS/form/单选框/js/radio.js" />
         <option value="$PROJECT_DIR$/HTML_CSS/form/单选框/radio.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/form/复选框/checkbox.html" />
         <option value="$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/text.html" />
+        <option value="$PROJECT_DIR$/HTML_CSS/form/下拉列表/select_finished.html" />
+        <option value="$PROJECT_DIR$/HTML_CSS/xiala_menu/变幻.html" />
+        <option value="$PROJECT_DIR$/HTML_CSS/xiala_menu/menuok.html" />
       </list>
     </option>
   </component>
@@ -218,11 +210,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="292" />
-    <option name="y" value="138" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="401" />
+    <option name="y" value="200" />
     <option name="width" value="1509" />
-    <option name="height" value="798" />
+    <option name="height" value="858" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -244,6 +236,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,38 +253,13 @@
               <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
               <item name="font-end" type="462c0819:PsiDirectoryNode" />
               <item name="HTML_CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="font-end" type="462c0819:PsiDirectoryNode" />
-              <item name="HTML_CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-              <item name="文本框" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="font-end" type="462c0819:PsiDirectoryNode" />
-              <item name="HTML_CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-              <item name="文本框" type="462c0819:PsiDirectoryNode" />
-              <item name="Form(文本)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="font-end" type="462c0819:PsiDirectoryNode" />
-              <item name="HTML_CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-              <item name="文本框" type="462c0819:PsiDirectoryNode" />
-              <item name="Form(文本)" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="xiala_menu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,7 +268,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/work/font-end/HTML_CSS/enterprise/css/main.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544021496400" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544542709719" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -310,11 +278,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\font-end\HTML_CSS\xiala_menu\css" />
       <recent name="D:\work\font-end\HTML_CSS\form" />
       <recent name="D:\work\font-end\HTML_CSS\dom_" />
       <recent name="D:\work\font-end\HTML_CSS\sprite" />
       <recent name="D:\work\font-end\HTML_CSS\enterprise" />
-      <recent name="C:\Users\wenheng\Desktop\work\font-end\js\Professional JavaScript for Web Developers\BOM" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\font-end\HTML_CSS\enterprise" />
@@ -433,20 +401,22 @@
       <workItem from="1543570606553" duration="52000" />
       <workItem from="1543753421276" duration="1051000" />
       <workItem from="1543762043953" duration="3367000" />
-      <workItem from="1543840208342" duration="19883000" />
+      <workItem from="1543840208342" duration="21403000" />
+      <workItem from="1544449574903" duration="5988000" />
+      <workItem from="1544528044273" duration="10541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281721000" />
+    <option name="totallyTimeSpent" value="299770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="741" y="63" width="1509" height="798" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49924585" visible="true" weight="0.17598344" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.15031983" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info active="true" id="Favorites" order="2" sideWeight="0.5007542" side_tool="true" visible="true" weight="0.17598344" />
+      <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.1359275" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -509,25 +479,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/dom_/第三章/domReady.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/dom_/第四章/isXML/example2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/dom_/第三章/domReady.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/dom_/第四章/isElement/example1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/dom_/第四章/isElement/example2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML_CSS/dom_/第三章/domNotReady.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -568,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="29" lean-forward="true" selection-end-line="120" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/下拉列表/select_finished.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -686,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/单选框/radio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/xml/area.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -745,8 +682,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/text.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="475">
+          <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/单选框/radio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="9" lean-forward="true" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/下拉列表/images/air.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/下拉列表/images/province_sprites.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/下拉列表/select_finished.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/变幻.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/menuok.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .menu {
+            height: 40px;
+            width: 600px;
+            background-color: #DFDFDF;
+            margin: 0 auto;
+        }
+
+        .level_1 li {
+            float: left;
+            line-height: 40px;
+            position: relative;
+        }
+
+        .level_1 li a {
+            display: block;
+            padding: 0 20px;
+            text-decoration: none;
+            color: #111111;
+        }
+
+        .level_1 li a:hover {
+            background-color: #666666;
+            color: #FFFFFF;
+        }
+
+        .level_1 li:hover ul {
+            display: block;
+        }
+
+        .level_1 li:hover ul li ul {
+            display: none;
+        }
+
+        .level_2 {
+            position: absolute;
+            display: none;
+            left: 0px;
+            top: 40px;
+        }
+
+        .level_2 li {
+            float: none;
+            height: 40px;
+            background-color: #DFDFDF;
+        }
+
+        .level_2 li ul {
+            position: absolute;
+            top: 0;
+            left: 105px;
+        }
+
+        .level_2 li ul li {
+            width: 100px;
+        }
+
+        .level_1 li ul li:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="menu">
+    <ul class="level_1">
+        <li>
+            <a href="#">首页</a>
+        </li>
+        <li><a href="#">课程大厅</a>
+            <ul class="level_2">
+                <li><a href="">javaScript</a></li>
+                <li><a href="">JQuery</a></li>
+            </ul>
+        </li>
+        <li><a href="#">学习中心</a>
+            <ul class="level_2">
+                <li><a href="#">前端课程</a>
+                    <ul>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">jquery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">手机开发</a>
+                    <ul>
+                        <li><a href="#">ios开发</a></li>
+                        <li><a href="#">android开发</a></li>
+                        <li><a href="#">WP开发</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">交流平台</a></li>
+            </ul>
+        </li>
+        <li><a href="#">经典案例</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+</div>
+</body>
+</html>

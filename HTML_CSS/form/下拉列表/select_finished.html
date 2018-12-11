@@ -1,1 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>表单美化_下拉列表篇</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css"/>
+    <style>
 
+        body {
+            background-color: #666666;
+        }
+
+        #Layer {
+            width: 500px;
+            height: 326px;
+            background-color: #FFFFFF;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .province {
+            background-color: #c81623;
+            width: 320px;
+            height: 42px;
+            margin: 80px auto;
+            padding-left: 10px;
+            position: relative;
+        }
+
+        .show {
+            width: 328px;
+            background-color: #FFFFFF;
+            border: 1px solid #666666;
+            position: absolute;
+            left: 0;
+        }
+
+        .show li {
+            border: 1px solid #D4D4D4;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .show li b {
+            width: 40px;
+            left: 0;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .show li a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #111111;
+            font-size: 14px;
+        }
+
+        .show li a:hover {
+            color: #c81623;
+        }
+
+        .province strong {
+            color: #FFFFFF;
+            font-size: 15px;
+            line-height: 42px;
+
+        }
+
+        .province span {
+            width: 200px;
+            height: 24px;
+            line-height: 24px;
+            background: #FFFFFF url("images/province_sprites.png") no-repeat 99.9% -2px;
+            display: inline-block;
+            font-size: 14px;
+            text-indent: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+
+        window.onload = function () {
+            var province = document.getElementById("selectProvince");
+            var lis = document.getElementById("allProvince").getElementsByTagName("a");
+
+            province.onclick = function () {
+                var show = document.getElementById("allProvince");
+                var selectProvince = document.getElementById("selectProvince");
+                if (show.style.display == "none" || show.style.display == "") {
+                    show.style.display = "block";
+                    selectProvince.style.backgroundPosition = "99.9% -17px";
+                } else if (show.style.display == "block") {
+                    show.style.display = "none";
+                    selectProvince.style.backgroundPosition = "99.9% -2px";
+                }
+            }
+
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].onclick = function () {
+                    var show = document.getElementById("allProvince");
+                    var selectProvince = document.getElementById("selectProvince");
+                    show.style.display = "none";
+                    selectProvince.style.backgroundPosition = "99.9% -2px";
+                    selectProvince.innerHTML = this.innerHTML;
+                }
+
+            }
+
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+<div id="Layer">
+    <div class="province">
+        <strong>送货至</strong>
+        <span id="selectProvince">北京</span>
+        <ul id="allProvince" class="show">
+            <li><b>A</b><a href="javascript:void(0);">安徽</a></li>
+            <li><b>B</b><a href="javascript:void(0);">北京</a></li>
+            <li><b>C</b><a href="javascript:void(0);">重庆</a></li>
+            <li><b>F</b><a href="javascript:void(0);">福建</a></li>
+            <li><b>G</b><a href="javascript:void(0);">广东</a><a href="javascript:void(0);">广西</a></li>
+            <li><b>H</b><a href="javascript:void(0);">河北</a><a href="javascript:void(0);">河南</a><a
+                    href="javascript:void(0);">黑龙江</a></li>
+            <li><b>J</b><a href="javascript:void(0);">吉林</a><a href="javascript:void(0);">江苏</a></li>
+            <li><b>L</b><a href="javascript:void(0);">辽宁</a></li>
+            <li><b>N</b><a href="javascript:void(0);">内蒙古</a></li>
+            <li><b>Q</b><a href="javascript:void(0);">青海</a></li>
+            <li><b>S</b><a href="javascript:void(0);">上海</a><a href="javascript:void(0);">山东</a></li>
+            <li><b>T</b><a href="javascript:void(0);">天津</a></li>
+            <li><b>X</b><a href="javascript:void(0);">新疆</a></li>
+            <li><b>Y</b><a href="javascript:void(0);">云南</a></li>
+            <li><b>Z</b><a href="javascript:void(0);">浙江</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
