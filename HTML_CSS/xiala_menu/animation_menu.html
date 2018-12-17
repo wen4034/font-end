@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+    <style>
+        .menu {
+            margin: 100px auto;
+            width: 1000px;
+            height: 34px;
+        }
+
+        .menu li {
+            float: left;
+            position: relative;
+        }
+
+        .menu li a {
+            display: block;
+            text-decoration: none;
+            color: #D4D4D4;
+            line-height: 34px;
+            padding: 0 20px;
+            background-color: #111111;
+        }
+
+        .menu .index_menu a {
+            background-image: url("image/slide-pannel_14.png");
+            color: #000000;
+            padding: 0 50px;
+            border-right: 1px solid #ffffff;
+        }
+
+        .menu li a:hover {
+            background-image: url("image/slide-pannel_14.png");
+            color: #000000;
+        }
+
+        /*.menu li:hover ul {*/
+        /*display: block;*/
+        /*}*/
+
+        .menu li ul li a {
+            height: 25px;
+            line-height: 25px;
+        }
+
+        .menu li ul {
+            position: absolute;
+            display: none;
+            font-size: 12px;
+            top: 35px;
+            background: url("image/bird.png") no-repeat 35px 0;
+            width: 500px;
+            padding-top: 10px;
+            overflow: hidden;
+            height: 0px;
+        }
+
+        .menu li ul li {
+            position: static;
+        }
+
+        .menu li ul li a {
+        }
+
+    </style>
+
+    <script>
+
+        window.onload = function (ev) {
+
+            var ul = document.getElementById("menu_ul");
+
+            var li = ul.getElementsByTagName("li");
+
+            for (var i = 0; i < li.length; i++) {
+
+                var childUl = li[i].getElementsByTagName("ul");
+                if (childUl.length > 0) {
+                    li[i].onmouseover = function () {
+                        var child = this.getElementsByTagName("ul")[0];
+                        child.style.display = "block";
+                        animation(child, 1, 35);
+                    }
+
+                    li[i].onmouseout = function () {
+                        var child = this.getElementsByTagName("ul")[0];
+                        var j = animation(child, -1, 0);
+                    }
+
+                }
+
+            }
+        }
+
+
+        function animation(ev, height, point) {
+
+            clearInterval(ev.timer);
+            ev.timer = setInterval(function () {
+                var ulHeight = parseInt(getStyle(ev, "height"));
+                console.log(ulHeight);
+                if (ulHeight == point) {
+                    clearInterval(ev.timer);
+
+                    if (height == -1) {
+                        ev.style.display = "none";
+                    }
+                }
+
+                if (height == 1) {
+                    ev.style['height'] = ulHeight + 1 + "px";
+                } else if (height == -1) {
+                    ev.style['height'] = ulHeight - 1 + "px";
+                }
+            }, 30);
+
+
+        }
+
+        function getStyle(obj, attr) {
+            if (obj.currentStyle) {
+                return obj.currentStyle[attr];
+            } else {
+                return getComputedStyle(obj, false)[attr];
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<ul class="menu" id="menu_ul">
+    <li class="index_menu"><a href="#">慕课网</a></li>
+    <li><a href="#">课程大厅</a>
+        <ul>
+            <li><a href="#">javascript</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">jquery</a></li>
+        </ul>
+    </li>
+    <li><a href="#">学习中心</a>
+        <ul>
+            <li><a href="#">javascript</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">jquery</a></li>
+        </ul>
+    </li>
+    <li><a href="#">个人中心</a></li>
+    <li><a href="#">关于我们</a></li>
+</ul>
+</body>
+</html>
