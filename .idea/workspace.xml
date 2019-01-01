@@ -2,113 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9bcb686-c166-4b94-8fc2-18f9c86b644c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js/falls/images/0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/29.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/30.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/32.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/33.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/34.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/35.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/36.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/37.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/38.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/39.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/40.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/41.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/42.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/43.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/45.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/46.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/47.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/48.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/49.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/50.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/51.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/52.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/53.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/54.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/55.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/56.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/57.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/58.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/59.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/60.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/61.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/62.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/63.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/64.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/65.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/66.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/67.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/68.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/69.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/70.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/71.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/72.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/73.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/74.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/75.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/76.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/77.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/78.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/79.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/80.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/81.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/82.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/83.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/84.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/85.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/86.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/87.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/88.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/89.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/91.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/92.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/93.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/94.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/95.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/96.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/97.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/SmallImgLeft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/kuang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/kuang2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/layerclose.hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/left_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/list.dragover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/right_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/images/smallImgRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/falls/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/digou/images/1F.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/digou/images/2F.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/digou/images/3F.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/digou/images/4F.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/digou/images/5F.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/digou/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -153,7 +52,7 @@
           <entry key="css" value="38" />
           <entry key="gif" value="18" />
           <entry key="htm" value="3" />
-          <entry key="html" value="147" />
+          <entry key="html" value="151" />
           <entry key="jpg" value="25" />
           <entry key="js" value="15" />
           <entry key="php" value="2" />
@@ -165,7 +64,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="38" />
-          <entry key="HTML" value="150" />
+          <entry key="HTML" value="154" />
           <entry key="Image" value="61" />
           <entry key="JavaScript" value="15" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -176,14 +75,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2247" />
-          <entry key="html" value="16751" />
+          <entry key="html" value="18492" />
           <entry key="js" value="235" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2247" />
-          <entry key="HTML" value="16751" />
+          <entry key="HTML" value="18492" />
           <entry key="JavaScript" value="235" />
         </counts>
       </usages-collector>
@@ -195,10 +94,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/falls/index.html">
+        <entry file="file://$PROJECT_DIR$/js/digou/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+            <state relative-caret-position="380">
+              <caret line="104" column="60" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -254,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/index.html.js" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/five/index.html" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/six/index.html" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/six/Object-Oriented.js" />
@@ -305,6 +203,7 @@
         <option value="$PROJECT_DIR$/HTML_CSS/xiala_menu/menuok.html" />
         <option value="$PROJECT_DIR$/HTML_CSS/xiala_menu/animation_menu.html" />
         <option value="$PROJECT_DIR$/js/falls/index.html" />
+        <option value="$PROJECT_DIR$/js/digou/index.html" />
       </list>
     </option>
   </component>
@@ -320,11 +219,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="359" />
-    <option name="y" value="141" />
-    <option name="width" value="1509" />
-    <option name="height" value="830" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="729" />
+    <option name="y" value="31" />
+    <option name="width" value="1634" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -360,6 +259,30 @@
               <item name="font-end" type="462c0819:PsiDirectoryNode" />
               <item name="HTML_CSS" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="font-end" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="font-end" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="digou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="font-end" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="digou" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="font-end" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="falls" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -372,7 +295,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/work/font-end/js/falls/images/97.jpg" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546249079681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546339777611" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -381,19 +304,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\font-end\js\digou\images" />
+      <recent name="D:\work\font-end\js\falls" />
+      <recent name="D:\work\font-end\HTML_CSS\xiala_menu\image" />
+      <recent name="D:\work\font-end\HTML_CSS\xiala_menu\css" />
+      <recent name="D:\work\font-end\HTML_CSS\form" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\font-end\js" />
       <recent name="D:\work\font-end\HTML_CSS\enterprise" />
       <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\enterprise" />
       <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS" />
       <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\business" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\font-end\js\falls" />
-      <recent name="D:\work\font-end\HTML_CSS\xiala_menu\image" />
-      <recent name="D:\work\font-end\HTML_CSS\xiala_menu\css" />
-      <recent name="D:\work\font-end\HTML_CSS\form" />
-      <recent name="D:\work\font-end\HTML_CSS\dom_" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -519,18 +442,18 @@
       <workItem from="1546159306703" duration="1682000" />
       <workItem from="1546247633283" duration="1406000" />
       <workItem from="1546249863371" duration="768000" />
-      <workItem from="1546308294346" duration="6695000" />
+      <workItem from="1546308294346" duration="13552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329618000" />
+    <option name="totallyTimeSpent" value="336475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="729" y="31" width="1634" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.17270789" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.15819567" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.1359275" />
       <window_info id="Image Layers" order="3" />
@@ -595,13 +518,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/复选框/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML_CSS/form/单选框/css/public.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -835,8 +751,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/falls/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+        <state relative-caret-position="513">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/digou/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="104" column="60" selection-start-line="104" selection-start-column="60" selection-end-line="104" selection-end-column="60" />
         </state>
       </provider>
     </entry>

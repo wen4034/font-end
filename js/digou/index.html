@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地狗购物网</title>
+
+
+    <style type="text/css">
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: "";
+            visibility: hidden;
+            height: 0
+        }
+
+        .clearfloat {
+            zoom: 1
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            position: fixed;
+            left: 50%;
+            margin-left: 400px;
+            top: 150px;
+        }
+
+        .menu li {
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            width: 80px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .menu li a {
+            font-size: 15px;
+            font-weight: bolder;
+            color: #111111;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu li a:hover, .menu li a.current {
+            color: #fff;
+            background: #0088bb;
+        }
+
+        .content {
+            width: 800px;
+            margin: 50px auto;
+        }
+
+        .item {
+            border: 1px #7F7F7F dashed;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .item h1 {
+            font-size: 16px;
+            border-bottom: 2px #1D7AD9 solid;
+            margin-bottom: 10px;
+            line-height: 1.7;
+
+        }
+
+        .item ul li {
+            float: left;
+            list-style: none;
+            margin-right: 10px;
+
+        }
+
+        .item ul li img {
+            height: 230px;
+            width: 230px;
+        }
+
+        .title {
+            font-size: 1.5em;
+            color: #1D7AD9;
+            margin-bottom: 5px;
+        }
+
+
+    </style>
+
+    <script>
+        window.onload = function (ev) {
+            window.onscroll = function (ev1) {
+                //得到滚动条离浏览器窗口的高度
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                var items = getClassName('ct', 'item');
+                var item;
+
+                for (var i in items) {
+                    if (scrollTop > items[i].offsetTop - 200) {
+                        item = items[i];
+                    } else {
+                        break;
+                    }
+
+                }
+
+                if (item) {
+                    console.log(item.id);
+                    //获取li下面的a标签
+                    var aTag = document.getElementById('mu').getElementsByTagName('a');
+                    for (var i in aTag) {
+                        var href = aTag[i].href.split('#');
+                        if (href[href.length - 1] == item.id) {
+                            aTag[i].className = 'current';
+                        } else {
+                            aTag[i].className = '';
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        function getClassName(parent, child) {
+
+            var boxs = document.getElementById(parent).getElementsByTagName("*");
+            var boxArr = [];
+            for (var i  in boxs) {
+                if (boxs[i].className == child) {
+                    boxArr.push(boxs[i]);
+                }
+            }
+            return boxArr;
+        }
+
+
+    </script>
+
+</head>
+<body>
+<ul class="menu" id="mu">
+    <li><a href="#item1" class="current">1F 男装</a></li>
+    <li><a href="#item2">2F 女装</a></li>
+    <li><a href="#item3">3F 美妆</a></li>
+    <li><a href="#item4">4F 数码</a></li>
+    <li><a href="#item5">5F 母婴</a></li>
+</ul>
+<div class="content" id="ct">
+    <h1 class="title">地狗购物网</h1>
+    <div id="item1" class="item">
+        <h1>1F 男装</h1>
+        <ul class="clearfloat">
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+            <li><img src="images/1F.jpg"></li>
+        </ul>
+    </div>
+    <div id="item2" class="item">
+        <h1>2F 女装</h1>
+        <ul class="clearfloat">
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+            <li><img src="images/2F.jpg"></li>
+        </ul>
+    </div>
+    <div id="item3" class="item">
+        <h1>3F 美妆</h1>
+        <ul class="clearfloat">
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+            <li><img src="images/3F.jpg"></li>
+        </ul>
+    </div>
+    <div id="item4" class="item">
+        <h1>4F 数码</h1>
+        <ul class="clearfloat">
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+            <li><img src="images/4F.png"></li>
+        </ul>
+    </div>
+    <div id="item5" class="item">
+        <h1>5F 母婴</h1>
+        <ul class="clearfloat">
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+            <li><img src="images/5F.jpg"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
