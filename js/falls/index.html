@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            padding: 5px;
+            float: left;
+        }
+
+        .pic {
+            padding: 5px;
+            border: 1px solid #BDBDBD;
+            box-shadow: 0px 0px 6px #888888;
+            border-radius: 5px;
+
+        }
+
+        .pic img {
+            width: 164px;
+        }
+
+        #main {
+            position: relative;
+        }
+
+
+    </style>
+
+    <script>
+        window.onload = function (ev) {
+            waterfall('main', 'box');
+
+            //监听滚动条事件
+            window.onscroll = function (ev1) {
+                if (checkscrollside()) {
+                    var dataInt = {'data': [{'src': '51.jpg'}, {'src': '52.jpg'}, {'src': '53.jpg'}, {'src': '54.jpg'}, {'src': '55.jpg'}, {'src': '56.jpg'}, {'src': '57.jpg'}, {'src': '58.jpg'}, {'src': '59.jpg'}]};
+
+                    for (var i in dataInt.data) {
+                        var box = document.createElement('div');
+                        box.className = 'box';
+
+                        var pic = document.createElement('div');
+                        pic.className = 'pic';
+                        box.appendChild(pic);
+
+                        var img = document.createElement('img');
+                        img.src = 'images/' + dataInt.data[i].src;
+                        pic.appendChild(img);
+
+
+                        document.getElementById('main').appendChild(box);
+                    }
+                    waterfall('main', 'box');
+                }
+            }
+        }
+
+        function checkscrollside() {
+
+            var boxs = getClassName('main', 'box');
+
+            var lastTop = boxs[boxs.length - 1].offsetTop + Math.floor(boxs[boxs.length - 1].offsetHeight / 2);
+            var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop;
+            var clientHeight = document.documentElement.clientHeight;
+
+            console.log('lastTop:' + lastTop);
+            console.log('scrollHeight:' + scrollHeight);
+            console.log('clientHeight:' + clientHeight);
+
+            return lastTop < (clientHeight + scrollHeight) ? true : false;
+        }
+
+        function getClassName(parent, child) {
+
+            var boxs = document.getElementById(parent).getElementsByTagName("*");
+            var boxArr = [];
+            for (var i  in boxs) {
+                if (boxs[i].className == child) {
+                    boxArr.push(boxs[i]);
+                }
+            }
+            return boxArr;
+        }
+
+
+        function waterfall(parent, box) {
+            var boxs = getClassName(parent, box);
+            var boxHArr = []; // 存每个数值的高度
+
+            console.log(boxs.length);
+
+            //屏幕的宽度
+            var clientWith = document.body.clientWidth;
+            //图片的宽度
+            var imgWidth = boxs[0].offsetWidth;
+            //图片的列数
+            var num = Math.floor(clientWith / imgWidth);
+
+            for (var i = 0; i < boxs.length; i++) {
+                if (i < num) {
+                    boxHArr[i] = boxs[i].offsetHeight;
+                } else {
+                    var minHeight = Math.min.apply(null, boxHArr);
+                    var index = getminHIndex(boxHArr, minHeight);
+                    boxs[i].style.position = 'absolute';
+                    boxs[i].style.top = minHeight + 'px';
+                    boxs[i].style.left = boxs[index].offsetLeft + 'px';
+                    //计算高度
+                    boxHArr[index] += boxs[i].offsetHeight;
+                }
+            }
+
+        }
+
+
+        function getminHIndex(arr, box) {
+            for (var i in arr) {
+                if (arr[i] == box) {
+                    return i;
+                }
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+<div id="main">
+    <div class="box">
+        <div class="pic">
+            <img src="images/0.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/1.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/2.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/3.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/4.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/5.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/6.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/7.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/8.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/9.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/10.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/11.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/12.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/13.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/14.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/15.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/16.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/17.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/18.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/19.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/20.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/21.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/22.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/23.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/24.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/25.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/26.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/27.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/28.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/29.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/30.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/31.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/32.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/33.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/34.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/35.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/36.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/37.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/38.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/39.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/40.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/41.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/42.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/43.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/44.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/45.jpg">
+        </div>
+    </div>
+    <div class="box">
+        <div class="pic">
+            <img src="images/45.jpg">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
