@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微软 bing 搜索 - 国内版</title>
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background-color: #666;
+        }
+
+        .top {
+            width: 100%%;
+            height: 898px;
+            background: url("images/LadyBugFrost_ZH-CN0796268333_1920x1080.jpg") 0 -90px;
+        }
+
+        .nav {
+            height: 40px;
+        }
+
+        .foot {
+            height: 40px;
+        }
+
+        .nav_classify {
+            float: left;
+            margin-left: 150px;
+        }
+
+        .nav_classify li {
+            list-style: none;
+            color: #F7F7F7;
+            float: left;
+            margin-right: 30px;
+            line-height: 40px;
+            height: 40px;
+            font-size: 14px;
+        }
+
+        .nav_classify a, .nav_login a {
+            color: #F7F7F7;
+            text-decoration: none;
+
+        }
+
+        .nav_classify a:hover {
+            color: #fff;
+        }
+
+        .nav_login {
+            height: 32px;
+            line-height: 32px;
+            float: right;
+            margin-right: 150px;
+            font-size: 14px;
+        }
+
+        .user {
+            display: inline-block;
+            margin: 0px 20px 0 10px;
+            position: relative;
+            width: 32px;
+            height: 32px;
+
+        }
+
+        .user span {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: #ececec;
+            position: absolute;
+            top: 10px;
+            background-image: url("images/hpc26.png");
+            background-position: -11px -149px;
+        }
+
+        .login {
+            display: inline-block;
+
+        }
+
+        .other {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+        }
+
+        .other span {
+            display: block;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 15px;
+            background-image: url("images/hpc26.png");
+            background-position: -170px -149px;
+        }
+
+        .search {
+            margin-top: 80px;
+            margin-left: 150px;
+            height: 55px;
+            position: relative;
+        }
+
+        .log {
+            height: 55px;
+            width: 132px;
+            background-image: url("images/hpc26.png");
+            float: left;
+            margin-right: 20px;
+        }
+
+        .search-form {
+            height: 43px;
+            float: left;
+            background-color: #fff;
+            padding: 10px 10px;
+            box-shadow: -2px 4px 20px #888888;
+
+        }
+
+        .search_text {
+            height: 40px;
+            line-height: 40px;
+            float: left;
+            width: 490px;
+            font-size: 20px;
+            outline: none;
+            border: 0;
+        }
+
+        .search_btn {
+            height: 53px;
+            width: 53px;
+            background-color: #fff;
+            border: 0;
+            background-image: url("images/hpc26.png");
+            background-position: -150px -57px;;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .suggest {
+            border-top: 1px solid #BDBDBD;
+            position: absolute;
+            width: 563px;
+            background-color: #fff;
+            top: 63px;
+            left: 152px;
+            display: none;
+        }
+
+        .suggest ul li {
+            list-style: none;
+            height: 35px;
+            line-height: 35px;
+            text-indent: 1em;
+        }
+
+        .suggest ul li:hover {
+            cursor: pointer;
+            background-color: #d5f4f5;
+            text-decoration: underline;
+        }
+
+        div#focus_ovr {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #000;
+            z-index: 300;
+            opacity: 0;
+        }
+
+    </style>
+
+
+    <script>
+
+        window.onload = function (ev) {
+            //给search-suggest绑定事件
+            var suggest = document.getElementById("search_txt");
+            var focus = document.getElementById("focus_ovr");
+
+            //suggest.onclick = suggestFunction;
+            addEvent(suggest, 'click', suggestFunction);
+            addEvent(focus, 'click', focusclickFunction);
+
+
+        }
+
+
+        var search_text_oninput = function () {
+
+
+        }
+
+
+        var Ajax = {
+            get: function (url, fn) {
+                // XMLHttpRequest对象用于在后台与服务器交换数据
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', url, true);
+                xhr.onreadystatechange = function () {
+                    // readyState == 4说明请求已完成
+                    if (xhr.readyState == 4 && xhr.status == 200 || xhr.status == 304) {
+                        // 从服务器获得数据
+                        fn.call(this, xhr.responseText);
+                    }
+                };
+                xhr.send();
+            },
+            // datat应为'a=a1&b=b1'这种字符串格式，在jq里如果data为对象会自动将对象转成这种字符串格式
+            post: function (url, data, fn) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", url, true);
+                // 添加http头，发送信息至服务器时内容编码类型
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 304)) {
+                        fn.call(this, xhr.responseText);
+                    }
+                };
+                xhr.send(data);
+            }
+        }
+
+
+        var focusclickFunction = function () {
+            var suggest = document.getElementById("search-suggest");
+            suggest.style.display = 'none';
+
+            var ovr = document.getElementById("focus_ovr");
+            ovr.style.visibility = 'hidden';
+
+
+        }
+        suggestFunction = function () {
+
+            var suggest = document.getElementById("search-suggest");
+            suggest.style.display = 'block';
+
+            var ovr = document.getElementById("focus_ovr");
+            ovr.style.visibility = 'visible';
+
+            var ovr = document.getElementsByClassName("search")[0];
+            ovr.style.zIndex = 400;
+        }
+
+
+        function getByClassName(parent, className) {
+            var childs = parent.getElementsByTagName("*");
+            var tag = [];
+
+            for (var i = 0; i < childs.length; i++) {
+                if (childs[i].className == className) {
+                    tag.push(childs[i]);
+                }
+            }
+            return tag;
+        }
+
+
+        //添加事件通用方法
+        function addEvent(element, e, fn) {
+            //firefox使用addEventListener，来添加事件
+            if (element.addEventListener) {
+                element.addEventListener(e, fn, false);
+            }
+            //ie使用attachEvent，来添加事件
+            else {
+                element.attachEvent("on" + e, fn);
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="top">
+        <div class="nav">
+            <ul class="nav_classify">
+                <li><a href="#">图片</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">学术</a></li>
+                <li><a href="#">词典</a></li>
+                <li><a href="#">地图</a></li>
+                <li>|</li>
+                <li><a href="#">Office Online</a></li>
+                <li><a href="#">Outlook.com</a></li>
+            </ul>
+            <div class="nav_login">
+                <a class="login" href="#">登录</a>
+                <a class="user" href="#"><span class="user_backdrop"></span></a>
+                <a class="other" href="#"><span class="user_backdrop"></span></a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="log"></div>
+            <form class="search-form" action="" target="_blank">
+                <input type="text" class="search_text" id="search_txt"/>
+                <input type="submit" class="search_btn" value="">
+            </form>
+            <div class="suggest" id="search-suggest">
+                <ul id="search-result">
+                    <li> 搜索内容</li>
+                    <li> 搜索内容</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="focus_ovr" style="height: 898px; visibility: hidden; opacity: 0.55;" data-bm="15"></div>
+    <div class="foot">
+
+    </div>
+</div>
+
+</body>
+</html>
