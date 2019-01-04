@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfloat:after {
+            display: block;
+            clear: both;
+            content: "";
+            visibility: hidden;
+            height: 0
+        }
+
+        .clearfloat {
+            zoom: 1
+        }
+
+        .tab {
+            width: 298px;
+            height: 100px;
+            background-color: #fff;
+            overflow: hidden;
+            margin: 20px auto;
+            border: 1px solid #eee;
+
+        }
+
+        .tab_title {
+            height: 30px;
+            position: relative;
+        }
+
+        .tab_title ul {
+            position: absolute;
+            left: -1px;
+            width: 301px;
+
+        }
+
+        .tab_title li {
+            list-style: none;
+            float: left;
+            width: 58px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 14px;
+            padding: 0 1px;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        .tab_title li.select {
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+            background-color: #fff;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .mod {
+            display: none;
+            padding: 0 8px;
+        }
+
+        .mod li {
+            float: left;
+            width: 141px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 12px;
+            list-style: none;
+            overflow: hidden;
+
+        }
+
+        .mod li a {
+            text-decoration: none;
+            color: #111111;
+        }
+
+        .mod li a:hover {
+            color: #F3E402;
+        }
+
+        .tab_content ul {
+
+        }
+
+    </style>
+
+    <script>
+
+        var timer;
+
+        window.onload = function (ev) {
+
+            //添加onMouse事件
+            var title_li = document.getElementById("tab").getElementsByTagName('li');
+            var content_li = document.getElementsByClassName('mod');
+
+            for (var i = 0; i < title_li.length; i++) {
+                title_li[i].onmouseover = function () {
+                    var that = this;
+
+                    if (timer) {
+                        clearTimeout(timer);
+                    }
+                    timer = null;
+
+                    timer = setTimeout(function () {
+
+                        for (var j = 0; j < title_li.length; j++) {
+                            if (title_li[j] === that) {
+                                that.className = 'select';
+                                content_li[j].style.display = 'block';
+                            } else {
+                                title_li[j].className = '';
+                                content_li[j].style.display = 'none';
+                            }
+
+                        }
+
+                    }, 200);
+                }
+            }
+
+        }
+
+        //添加事件通用方法
+        function addEvent(element, e, fn) {
+            //firefox使用addEventListener，来添加事件
+            if (element.addEventListener) {
+                element.addEventListener(e, fn, false);
+            }
+            //ie使用attachEvent，来添加事件
+            else {
+                element.attachEvent("on" + e, fn);
+            }
+        }
+
+        function getByClassName(parent, className) {
+            var childs = parent.getElementsByTagName("*");
+            var tag = [];
+
+            for (var i = 0; i < childs.length; i++) {
+                if (childs[i].className == className) {
+                    tag.push(childs[i]);
+                }
+            }
+            return tag;
+        }
+
+    </script>
+
+</head>
+<body>
+<div class="tab">
+    <div class="tab_title">
+        <ul class="clearfloat" id="tab">
+            <li class="select">公告</li>
+            <li>规则</li>
+            <li>论坛</li>
+            <li>安全</li>
+            <li class="">公益</li>
+        </ul>
+    </div>
+    <div class="tab_content">
+        <ul class="mod" style="display: block">
+            <li>
+                <a href="#">张勇：要玩快乐足球</a>
+            </li>
+            <li>
+                <a href="#">阿里2000万驰援灾区！</a>
+            </li>
+            <li>
+                <a href="#">旅游宝让你边玩边赚钱</a>
+            </li>
+            <li>
+                <a href="#">多行跟进阿里信用贷款</a>
+            </li>
+        </ul>
+        <ul class="mod">
+            <li>
+                <span>[<a href="#">通知</a>]</span>
+                <a href="#">"滥发"即将换新</a>
+            </li>
+            <li>
+                <span>[<a href="#">通知</a></span>
+                <a href="#">比特币严管啦！</a>
+            </li>
+            <li>
+                <span>[<a href="#">通知</a>]</span>
+                <a href="#">禁发商品名录！</a>
+            </li>
+            <li>
+                <span>[<a href="#">通知</a>]</span>
+                <a href="#">商品属性限制</a>
+            </li>
+        </ul>
+        <ul class="mod">
+            <li>
+                <span>[<a href="#">聚焦</a>]</span>
+                <a href="#">金牌卖家再启航</a>
+            </li>
+            <li>
+                <span>[<a href="#">功能</a>]</span>
+                <a href="#">橱窗规则升级啦</a>
+            </li>
+            <li>
+                <span>[<a href="#">话题</a>]</span>
+                <a href="#">又爱又恨优惠劵</a>
+            </li>
+            <li>
+                <span>[<a href="#">工具</a>]</span>
+                <a href="#">购后送店铺红</a>
+            </li>
+        </ul>
+        <ul class="mod">
+            <li>
+                <a href="#">个人重要信息要管牢！</a>
+            </li>
+            <li>
+                <a href="#">卖家防范红包欺诈提醒</a>
+            </li>
+            <li>
+                <a href="#">更换收货地址的陷阱！</a>
+            </li>
+            <li>
+                <a href="#">注意骗子的技术升级了！</a>
+            </li>
+        </ul>
+        <ul class="mod">
+            <li>
+                <a href="#">走进无声课堂</a>
+            </li>
+            <li>
+                <a href="#">淘宝之行大众评审赢公益金</a>
+            </li>
+            <li>
+                <a href="#">爱心品牌联合征集</a>
+            </li>
+            <li>
+                <a href="#">名公益机构淘宝开店攻略</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>
