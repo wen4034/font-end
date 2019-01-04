@@ -101,38 +101,76 @@
     <script>
 
         var timer;
+        var index = 0;
+        var lunbo_timer;
+
 
         window.onload = function (ev) {
 
             //添加onMouse事件
             var title_li = document.getElementById("tab").getElementsByTagName('li');
-            var content_li = document.getElementsByClassName('mod');
 
+            //
             for (var i = 0; i < title_li.length; i++) {
-                title_li[i].onmouseover = function () {
-                    var that = this;
 
+                title_li[i].id = i;
+
+                title_li[i].onmouseover = function () {
+
+                    var that = this;
                     if (timer) {
                         clearTimeout(timer);
                     }
+
+                    if (lunbo_timer) {
+                        clearInterval(lunbo_timer);
+                    }
+
                     timer = null;
 
                     timer = setTimeout(function () {
-
-                        for (var j = 0; j < title_li.length; j++) {
-                            if (title_li[j] === that) {
-                                that.className = 'select';
-                                content_li[j].style.display = 'block';
-                            } else {
-                                title_li[j].className = '';
-                                content_li[j].style.display = 'none';
-                            }
-
-                        }
-
+                        setlunbo(that.id);
                     }, 200);
                 }
+
+                title_li[i].onmouseout = function () {
+                    if (lunbo_timer) {
+                        clearInterval(lunbo_timer);
+                    }
+
+                    index = this.id;
+                    lunbo_timer = setInterval(carouselTab, 2000);
+                }
             }
+
+            //
+            lunbo_timer = setInterval(carouselTab, 2000);
+
+        }
+
+        function carouselTab(curIndex) {
+
+            setlunbo(curIndex);
+
+        }
+
+
+        //
+        function setlunbo(curIndex) {
+            var title_li = document.getElementById("tab").getElementsByTagName('li');
+            var content_li = document.getElementsByClassName('mod');
+
+            if (curIndex >= title_li.length) {
+                curIndex = 0;
+            }
+
+
+            for (var i = 0; i < title_li.length; i++) {
+                title_li[i].className = '';
+                content_li[i].style.display = 'none';
+            }
+            title_li[curIndex].className = 'select';
+            content_li[curIndex].style.display = 'block';
 
         }
 

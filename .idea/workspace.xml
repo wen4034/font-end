@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html" line="158" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e9bcb686-c166-4b94-8fc2-18f9c86b644c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,9 +24,10 @@
     <session id="746062486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="4" />
           <entry key="project.open.time.28" value="4" />
@@ -39,7 +43,7 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,7 +56,7 @@
           <entry key="js" value="15" />
           <entry key="php" value="2" />
           <entry key="png" value="20" />
-          <entry key="ts" value="5" />
+          <entry key="ts" value="6" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
@@ -63,21 +67,21 @@
           <entry key="Image" value="64" />
           <entry key="JavaScript" value="15" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="TypeScript" value="5" />
+          <entry key="TypeScript" value="6" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2247" />
-          <entry key="html" value="22845" />
+          <entry key="html" value="23527" />
           <entry key="js" value="235" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2247" />
-          <entry key="HTML" value="22845" />
+          <entry key="HTML" value="23527" />
           <entry key="JavaScript" value="235" />
         </counts>
       </usages-collector>
@@ -91,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+            <state relative-caret-position="46">
+              <caret line="138" column="21" lean-forward="true" selection-start-line="138" selection-start-column="21" selection-end-line="138" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -113,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>navCont_list</find>
       <find>.des_infoContent</find>
       <find>logo</find>
       <find>translate</find>
@@ -143,6 +146,7 @@
       <find>offset</find>
       <find>setInterval</find>
       <find>icur</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,10 +222,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="165" />
-    <option name="y" value="302" />
+    <option name="x" value="161" />
+    <option name="y" value="287" />
     <option name="width" value="1635" />
-    <option name="height" value="839" />
+    <option name="height" value="953" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -243,8 +247,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,7 +279,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/work/font-end/js/falls/images/97.jpg" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546603619106" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546603632949" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -284,19 +288,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\font-end\js" />
-      <recent name="D:\work\font-end\HTML_CSS\enterprise" />
-      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\enterprise" />
-      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS" />
-      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\business" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\font-end\js\sousuokuang\images" />
       <recent name="D:\work\font-end\js\digou\images" />
       <recent name="D:\work\font-end\js\falls" />
       <recent name="D:\work\font-end\HTML_CSS\xiala_menu\image" />
       <recent name="D:\work\font-end\HTML_CSS\xiala_menu\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\font-end\js" />
+      <recent name="D:\work\font-end\HTML_CSS\enterprise" />
+      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\enterprise" />
+      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS" />
+      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\business" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -424,18 +428,19 @@
       <workItem from="1546249863371" duration="768000" />
       <workItem from="1546308294346" duration="14566000" />
       <workItem from="1546492879089" duration="17072000" />
-      <workItem from="1546580292091" duration="6992000" />
+      <workItem from="1546580292091" duration="7606000" />
+      <workItem from="1546607106038" duration="2035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361553000" />
+    <option name="totallyTimeSpent" value="364202000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="357" y="447" width="1635" height="839" extended-state="0" />
+    <frame x="161" y="287" width="1635" height="953" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.16190477" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.16380952" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.1359275" />
       <window_info id="Image Layers" order="3" />
@@ -653,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="17076" column="17" selection-start-line="17076" selection-start-column="17" selection-end-line="17076" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/animation/renyizhi.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
@@ -745,16 +743,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="16272" column="53" lean-forward="true" selection-start-line="16272" selection-start-column="53" selection-end-line="16272" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+        <state relative-caret-position="46">
+          <caret line="138" column="21" lean-forward="true" selection-start-line="138" selection-start-column="21" selection-end-line="138" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
