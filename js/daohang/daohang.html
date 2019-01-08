@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .topmenu {
+            border: 2px solid red;
+            width: 220px;
+            margin: 20px 20px;
+        }
+
+        .topmenu .title {
+            font-size: 11pt;
+            color: #fff;
+            background: red;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 20px;
+        }
+
+        .classify {
+            list-style: none;
+        }
+
+        .classify li {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+
+        .classify a {
+            font-size: 11pt;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .classify .lihover {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            border-left: 3px solid red;
+            box-shadow: 0 0 8px #ddd;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            left: 240px;
+            top: 40px;
+            background: #fff;
+            border: 1px solid #eee;
+            box-shadow: 0 0 8px #ddd;
+            width: 715px;
+        }
+
+        .submenu .leftmenu {
+            width: 490px;
+            margin: 5px;
+        }
+
+        .leftmenu dl {
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+            display: block;
+            padding: 6px 0;
+        }
+
+        .leftmenu dl dt {
+            display: block;
+            float: left;
+            width: 60px;
+            text-align: right;
+            padding-right: 6px;
+            height: 22px;
+            line-height: 22px;
+
+        }
+
+        .leftmenu dl dd {
+            display: block;
+            overflow: hidden;
+        }
+
+        .leftmenu dl dt a {
+            color: red;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 10pt;
+        }
+
+        .leftmenu dl dd a {
+            display: block;
+            float: left;
+            font-size: 9pt;
+            color: #737373;
+            border-left: 1px solid #ccc;
+            height: 14px;
+            line-height: 14px;
+            margin: 5px 0;
+            padding: 0 8px;
+            font-size: 9pt;
+        }
+
+        .classify .lihover .submenu {
+            display: block;
+        }
+
+        .lihover .white {
+            display: block;
+            position: relative;
+            background: white;
+            height: 30px;
+            width: 40px;
+            z-index: 40;
+            float: right;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function (ev) {
+
+            var liList = document.getElementsByClassName('classify')[0].getElementsByTagName('li');
+
+            for (var i = 0; i < liList.length; i++) {
+
+                liList[i].onmouseover = function () {
+                    this.className = 'lihover';
+                }
+
+
+                liList[i].onmouseout = function () {
+                    this.className = '';
+                }
+
+            }
+
+
+        }
+
+        function getClassName(parent, child) {
+
+            var boxs = document.getElementById(parent).getElementsByTagName("*");
+            var boxArr = [];
+            for (var i  in boxs) {
+                if (boxs[i].className == child) {
+                    boxArr.push(boxs[i]);
+                }
+            }
+            return boxArr;
+        }
+
+    </script>
+</head>
+<body>
+<div class="topmenu">
+    <h1 class="title">全部商品分类</h1>
+    <ul class="classify">
+        <li>
+            <a href="#">图书、音像、数字商品</a>
+            <div class="submenu">
+                <div class="leftmenu">
+                    <dl>
+                        <dt><a href="#">电子书</a></dt>
+                        <dd>
+                            <a href="#">免费</a> <a href="#">小说</a> <a href="#">励志与成功</a> <a href="#">婚恋/两性</a>
+                            <a href="#">文学</a> <a href="#">经管</a> <a href="#">畅读VIP</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">数字音乐</a></dt>
+                        <dd>
+                            <a href="#">通俗流行</a> <a href="#">古典音乐</a> <a href="#">摇滚说唱</a> <a href="#">爵士蓝调</a>
+                            <a href="#">乡村民谣</a> <a href="#">有声读物</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">音像</a></dt>
+                        <dd>
+                            <a href="#">音乐</a> <a href="#">影视</a> <a href="#">教育音像</a> <a href="#">游戏</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">文艺</a></dt>
+                        <dd>
+                            <a href="#">小说</a> <a href="#">文学</a> <a href="#">青春文学</a> <a href="#">传记</a> <a
+                                href="#">艺术</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">人文社科</a></dt>
+                        <dd>
+                            <a href="#">历史</a> <a href="#">心理学</a> <a href="#">政治/军事</a> <a href="#">国学/古籍</a>
+                            <a href="#">哲学/宗教</a> <a href="#">社会科学</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">经管励志</a></dt>
+                        <dd>
+                            <a href="#">经济</a> <a href="#">金融与投资</a> <a href="#">管理</a> <a href="#">励志与成功</a>
+                        </dd>
+                    </dl>
+                    <dl class="fore7">
+                        <dt><a href="#">生活</a></dt>
+                        <dd>
+                            <a href="#">家教与育儿</a> <a href="#">旅游/地图</a> <a href="#">烹饪/美食</a> <a href="#">时尚/美妆</a>
+                            <a href="#">家居</a> <a href="#">婚恋与两性</a> <a href="#">娱乐/休闲</a> <a href="#">健身与保健</a>
+                            <a href="#">动漫/幽默</a> <a href="#">体育/运动</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">科技</a></dt>
+                        <dd>
+                            <a href="#">科普</a> <a href="#">IT</a> <a href="#">建筑</a> <a href="#">医学</a> <a href="#">
+                            工业技术</a> <a href="#">电子/通信</a> <a href="#">农林</a> <a href="#">科学与自然</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">少儿</a></dt>
+                        <dd>
+                            <a href="#">少儿</a> <a href="#">0-2岁</a> <a href="#">3-6岁</a> <a href="#">7-10岁</a>
+                            <a href="#">11-14岁</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">教育</a></dt>
+                        <dd>
+                            <a href="#">教材</a> <a href="#">中小学教辅</a> <a href="#">考试</a> <a href="#">外语学习</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">其它</a></dt>
+                        <dd>
+                            <a href="#">英文原版书</a> <a href="#">港台图书</a> <a href="#">工具书</a> <a href="#">套装书</a>
+                            <a href="#">杂志/期刊</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li class="">
+            <a href="#">家用电器</a><span class="white"></span>
+            <div class="submenu">
+                <div class="leftmenu">
+                    <dl>
+                        <dt><a href="#">大 家 电</a></dt>
+                        <dd>
+                            <a href="#">平板电视</a> <a href="#">空调</a> <a href="#">冰箱</a> <a href="#">洗衣机</a> <a
+                                href="#">家庭影院</a> <a href="#">DVD</a> <a href="#">迷你音响</a> <a href="#">烟机/灶具</a>
+                            <a href="#">热水器</a> <a href="#">消毒柜/洗碗机</a> <a href="#">酒柜/冷柜</a> <a href="#">家电配件</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">生活电器</a></dt>
+                        <dd>
+                            <a href="#">电风扇</a> <a href="#">冷风扇</a> <a href="#">净化器</a> <a href="#">饮水机</a>
+                            <a href="#">净水设备</a> <a href="#">挂烫机/熨斗</a> <a href="#">吸尘器</a> <a href="#">电话机</a>
+                            <a href="#">插座</a> <a href="#">收录/音机</a> <a href="#">清洁机</a> <a href="#">加湿器</a>
+                            <a href="#">除湿/干衣机</a> <a href="#">取暖电器</a> <a href="#">其它生活电器</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">厨房电器</a></dt>
+                        <dd>
+                            <a href="#">电压力锅</a> <a href="#">电饭煲</a> <a href="#">豆浆机</a> <a href="#">面包机</a>
+                            <a href="#">咖啡机</a> <a href="#">微波炉</a> <a href="#">料理/榨汁机</a> <a href="#">电烤箱</a>
+                            <a href="#">电磁炉</a> <a href="#">电饼铛/烧烤盘</a> <a href="#">煮蛋器</a> <a href="#">酸奶机</a>
+                            <a href="#">电水壶/热水瓶</a> <a href="#">电炖锅</a> <a href="#">多用途锅</a> <a href="#">果蔬解毒机</a>
+                            <a href="#">其它厨房电器</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">个护健康</a></dt>
+                        <dd>
+                            <a href="#">剃须刀</a> <a href="#">剃/脱毛器</a> <a href="#">口腔护理</a> <a href="#">电吹风</a>
+                            <a href="#">美容</a> <a href="#">美发</a> <a href="#">按摩器</a> <a href="#">按摩椅</a> <a
+                                href="#">足浴盆</a> <a href="#">血压计</a> <a href="#">健康秤/厨房秤</a> <a href="#">血糖仪</a>
+                            <a href="#">体温计</a> <a href="#">计步器/脂肪检测仪</a> <a href="#">其它健康电器</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">五金家装</a></dt>
+                        <dd>
+                            <a href="#">电动工具</a> <a href="#">手动工具</a> <a href="#">仪器仪表</a> <a href="#">浴霸/排气扇</a>
+                            <a href="#">灯具</a> <a href="#">LED灯</a> <a href="#">洁身器</a> <a href="#">水槽</a> <a
+                                href="#">龙头</a> <a href="#">淋浴花洒</a> <a href="#">厨卫五金</a> <a href="#">家具五金</a>
+                            <a href="#">门铃</a> <a href="#">电气开关</a> <a href="#">插座</a> <a href="#">电工电料</a>
+                            <a href="#">监控安防</a> <a href="#">电线/线缆</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">手机、数码</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">电脑、办公</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">家居、家具、家装、厨具</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">服饰内衣、珠宝首饰</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">个护化妆</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">鞋靴、箱包、钟表、奢侈品</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">运动户外</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">汽车用品</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">母婴、玩具乐器</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">食品饮料、酒类、生鲜</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">营养保健</a>
+            <div class="submenu">
+                <div class="leftmenu">
+
+                </div>
+                <div class="rightad">
+
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

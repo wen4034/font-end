@@ -148,9 +148,16 @@
 
         }
 
-        function carouselTab(curIndex) {
+        function carouselTab() {
 
-            setlunbo(curIndex);
+            var title_li = document.getElementById("tab").getElementsByTagName('li');
+
+            index++;
+            if (index >= title_li.length) {
+                index = 0;
+            }
+
+            setlunbo(index);
 
         }
 
@@ -160,18 +167,13 @@
             var title_li = document.getElementById("tab").getElementsByTagName('li');
             var content_li = document.getElementsByClassName('mod');
 
-            if (curIndex >= title_li.length) {
-                curIndex = 0;
-            }
-
-
             for (var i = 0; i < title_li.length; i++) {
                 title_li[i].className = '';
                 content_li[i].style.display = 'none';
             }
             title_li[curIndex].className = 'select';
             content_li[curIndex].style.display = 'block';
-
+            index = curIndex;
         }
 
         //添加事件通用方法
