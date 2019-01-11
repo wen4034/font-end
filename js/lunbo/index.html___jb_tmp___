@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        .carousel {
+            height: 400px;
+            width: 600px;
+            position: relative;
+            border: 3px solid #000000;
+            overflow: hidden;
+        }
+
+        .carousel div {
+            width: 4200px;
+            position: absolute;
+        }
+
+        .carousel img {
+            display: block;
+            float: left;
+        }
+
+        #button {
+            position: absolute;
+            height: 12px;
+            z-index: 2;
+            top: 370px;
+            left: 250px;
+        }
+
+        #button span {
+            width: 12px;
+            display: inline-block;
+            height: 100%;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 1px solid #FFFFFF;
+            background-color: #333;
+            margin-right: 2px;
+            cursor: pointer;
+        }
+
+        .arrow {
+            display: none;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            z-index: 2;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #FFFFFF;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        #button .on {
+            background-color: #E27A00;
+        }
+
+        #prev {
+            top: 180px;
+            left: 20px;
+        }
+
+        #next {
+            top: 180px;
+            left: 540px;
+        }
+
+        .carousel:hover .arrow {
+            display: block;
+        }
+
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+    </style>
+
+
+    <script>
+
+        window.onload = function () {
+
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            var list = document.getElementById('list');
+            var button = document.getElementById('button').getElementsByTagName('span');
+            var carousel = document.getElementById('carousel_');
+            var animated = true;
+            var index = 1;
+            var timer;
+
+            pay();
+
+            prev.onclick = function () {
+
+
+                if (!animated) {
+                    return;
+                }
+
+
+                animation(+600);
+
+                if (index == 1) {
+                    showButton(5);
+                } else {
+                    showButton(index - 1);
+
+                }
+            }
+
+            next.onclick = function () {
+
+                if (!animated) {
+                    return;
+                }
+
+
+                animation(-600);
+
+                if (index == 5) {
+                    showButton(1);
+                } else {
+                    showButton(index + 1);
+                }
+            }
+
+
+            for (var i = 0; i < button.length; i++) {
+                button[i].onclick = function () {
+                    var click_idnex = this.getAttribute('index');
+                    var offset = (click_idnex - index) * -600;
+                    animation(offset);
+                    showButton(click_idnex);
+                }
+            }
+
+
+            carousel.onmouseover = function () {
+                stop();
+            }
+
+            carousel.onmouseout = function () {
+                pay();
+            }
+
+            function pay() {
+                timer = setTimeout(function () {
+                    next.onclick();
+                    pay();
+                }, 1000)
+            }
+
+            function stop() {
+                if (timer) {
+                    clearTimeout(timer);
+                }
+
+            }
+
+
+            function animation(value) {
+
+
+                var left = parseInt(list.style.left) + value;
+                animated = false;
+
+                startMove(list, {left: left}, function () {
+
+                    if (left == -3600) {
+                        list.style.left = -600 + 'px';
+                    } else if (left == 0) {
+                        list.style.left = -3000 + 'px';
+                    }
+                    animated = true;
+                });
+
+            }
+
+            function showButton(value) {
+
+                if (value < 1 || value > 5) {
+                    return;
+                }
+
+
+                for (var i = 0; i < button.length; i++) {
+                    button[i].className = '';
+                }
+
+                button[value - 1].className = 'on';
+                index = value;
+            }
+
+        }
+
+
+        function startMove(obj, json, fn) {
+
+            clearInterval(obj.timer);
+
+            obj.timer = setInterval(function () {
+
+                var flag = true;
+
+                for (var attr in  json) {
+                    var icur = 0;
+                    if (attr == 'opacity') {
+                        icur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+                    } else {
+                        icur = parseInt(getStyle(obj, attr));
+                    }
+                    var speed = (json[attr] - icur) / 8;
+                    speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+
+                    if (icur != json[attr]) {
+                        flag = false;
+                    }
+
+                    if (attr == 'opacity') {
+                        obj.style.filter = 'alpha(opacity:' + icur + speed + ')';
+                        obj.style.opacity = (speed + icur) / 100;
+                    } else {
+                        obj.style[attr] = icur + speed + 'px';
+                    }
+                    //  alert(obj.style.width);
+
+                }
+
+                if (flag) {
+                    clearInterval(obj.timer);
+                    if (fn) {
+                        fn();
+                    }
+                }
+
+            }, 30)
+        }
+
+        function getStyle(obj, attr) {
+            if (obj.currentStyle) {
+                return obj.currentStyle[attr];
+            } else {
+                return getComputedStyle(obj, false)[attr];
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="carousel" id="carousel_">
+    <div id="list" style="left: -600px">
+        <img src="img/5.jpg">
+        <img src="img/1.jpg">
+        <img src="img/2.jpg">
+        <img src="img/3.jpg">
+        <img src="img/4.jpg">
+        <img src="img/5.jpg">
+        <img src="img/1.jpg">
+    </div>
+    <div id="button">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+
+    <a id="prev" href="#" class="arrow">&lt;</a>
+    <a id="next" href="#" class="arrow">&gt;</a>
+</div>
+</body>
+</html>
