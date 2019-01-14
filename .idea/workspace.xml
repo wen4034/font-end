@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9bcb686-c166-4b94-8fc2-18f9c86b644c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js/lunbo/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lunbo/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lunbo/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lunbo/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lunbo/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lunbo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/gundong/gundong.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,7 +30,7 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.26" value="2" />
-          <entry key="project.open.time.27" value="6" />
+          <entry key="project.open.time.27" value="7" />
           <entry key="project.open.time.28" value="5" />
           <entry key="project.open.time.29" value="3" />
           <entry key="project.open.time.30" value="3" />
@@ -46,9 +42,10 @@
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="40" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,7 +53,7 @@
           <entry key="css" value="38" />
           <entry key="gif" value="18" />
           <entry key="htm" value="3" />
-          <entry key="html" value="169" />
+          <entry key="html" value="170" />
           <entry key="jpg" value="26" />
           <entry key="js" value="15" />
           <entry key="php" value="2" />
@@ -68,7 +65,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="38" />
-          <entry key="HTML" value="172" />
+          <entry key="HTML" value="173" />
           <entry key="Image" value="64" />
           <entry key="JavaScript" value="15" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -79,14 +76,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2247" />
-          <entry key="html" value="25923" />
+          <entry key="html" value="26881" />
           <entry key="js" value="235" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2247" />
-          <entry key="HTML" value="25923" />
+          <entry key="HTML" value="26881" />
           <entry key="JavaScript" value="235" />
         </counts>
       </usages-collector>
@@ -98,14 +95,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/lunbo/index.html">
+        <entry file="file://$PROJECT_DIR$/js/gundong/gundong.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
-              <folding>
-                <element signature="e#1502#1506#1" expanded="true" />
-                <element signature="e#1530#1534#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="151">
+              <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -161,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/five/quote.js" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/Functional expression/index.html" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/Functional expression/recursion.js" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/Functional expression/closure.js" />
@@ -212,6 +204,7 @@
         <option value="$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html" />
         <option value="$PROJECT_DIR$/js/daohang/daohang.html" />
         <option value="$PROJECT_DIR$/js/lunbo/index.html" />
+        <option value="$PROJECT_DIR$/js/gundong/gundong.html" />
       </list>
     </option>
   </component>
@@ -228,10 +221,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="752" />
-    <option name="y" value="351" />
+    <option name="x" value="149" />
+    <option name="y" value="435" />
     <option name="width" value="1455" />
-    <option name="height" value="833" />
+    <option name="height" value="583" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -253,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,23 +258,11 @@
               <item name="font-end" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="font-end" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lunbo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="font-end" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lunbo" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -292,7 +272,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/work/font-end/js/digou/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547209820421" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547448276868" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -301,19 +281,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\work\font-end\js" />
-      <recent name="D:\work\font-end\HTML_CSS\enterprise" />
-      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\enterprise" />
-      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS" />
-      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\business" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\work\font-end\js\lunbo" />
       <recent name="D:\work\font-end\js\sousuokuang\images" />
       <recent name="D:\work\font-end\js\digou\images" />
       <recent name="D:\work\font-end\js\falls" />
       <recent name="D:\work\font-end\HTML_CSS\xiala_menu\image" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work\font-end\js" />
+      <recent name="D:\work\font-end\HTML_CSS\enterprise" />
+      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\enterprise" />
+      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS" />
+      <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\business" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -447,17 +427,19 @@
       <workItem from="1546700066328" duration="4273000" />
       <workItem from="1546943513292" duration="1391000" />
       <workItem from="1547193889827" duration="4221000" />
+      <workItem from="1547367413817" duration="4673000" />
+      <workItem from="1547440879540" duration="2687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376857000" />
+    <option name="totallyTimeSpent" value="384217000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="752" y="351" width="1455" height="833" extended-state="0" />
+    <frame x="149" y="435" width="1455" height="583" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.19498208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.20071685" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.1359275" />
       <window_info id="Image Layers" order="3" />
@@ -522,7 +504,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/images/red_asterisk.png" />
     <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/images/checkbox.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -771,9 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,11 +765,14 @@
     <entry file="file://$PROJECT_DIR$/js/lunbo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
-          <caret line="73" column="27" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
-          <folding>
-            <element signature="e#1502#1506#1" expanded="true" />
-            <element signature="e#1530#1534#0" expanded="true" />
-          </folding>
+          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/gundong/gundong.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
         </state>
       </provider>
     </entry>

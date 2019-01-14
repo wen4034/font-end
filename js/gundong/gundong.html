@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .moc {
+            width: 399px;
+            border: 5px solid #666666;
+            border-radius: 16px;
+            margin: 30px auto;
+
+        }
+
+        .moc .title {
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f05e6f), color-stop(1, #c9394a));
+            border-radius: 8px 8px 0 0;
+            height: 60px;
+            line-height: 60px;
+            color: #FFFFFF;
+            font-size: 25px;
+            padding-left: 30px;
+            padding-right: 10px;
+            position: relative;
+        }
+
+        .moc .title a {
+            position: absolute;
+            font-size: 12px;
+            right: 10px;
+            bottom: 10px;
+            line-height: 25px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            font-size: 12px;
+            height: 24px;
+            line-height: 24px;
+            position: relative;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #111111;
+        }
+
+        ul li a:hover {
+            color: #E27A00;
+        }
+
+        ul li span {
+            position: absolute;
+            right: 10px;
+        }
+
+        #mocBox {
+            margin-top: 10px;
+            padding: 0px 30px 0px 30px;
+            height: 168px;
+            overflow: hidden;
+        }
+
+    </style>
+
+
+    <script>
+        window.onload = function () {
+            var mocBox = document.getElementById('mocBox');
+
+            var rollHeight = 24;
+            mocBox.innerHTML = mocBox.innerHTML + mocBox.innerHTML;
+            console.log(mocBox.scrollHeight);
+
+            roll();
+
+            function roll() {
+                console.log(mocBox.scrollTop);
+                mocBox.scrollTop++;
+                if (mocBox.scrollTop % rollHeight == 0) {
+                    setTimeout(roll, 1000);
+                } else {
+                    if (mocBox.scrollTop >= mocBox.scrollHeight / 2) {
+                        mocBox.scrollTop = 0;
+                    }
+                    setTimeout(roll, 100);
+                }
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+<div class="moc" id="moc">
+    <div class="title">慕课网最新课程 <a>更多&gt&gt</a></div>
+
+
+    <div id="mocBox">
+        <ul>
+            <li><a href="#">1.学会html5 绝对的屌丝逆袭（案例）</a><span>2013-09-18</span></li>
+            <li><a href="#">2.tab页面切换效果（案例）</a><span>2013-10-09</span></li>
+            <li><a href="#">3.圆角水晶按钮制作（案例）</a><span>2013-10-21</span></li>
+            <li><a href="#">4.HTML+CSS基础课程(系列)</a><span>2013-11-01</span></li>
+            <li><a href="#">5.分页页码制作（案例）</a><span>2013-11-06</span></li>
+            <li><a href="#">6.导航条菜单的制作（案例）</a><span>2013-11-08</span></li>
+            <li><a href="#">7.信息列表制作(案例)</a><span>2013-11-15</span></li>
+            <li><a href="#">8.下拉菜单制作(案例)</a><span>2013-11-22</span></li>
+            <li><a href="#">9.如何实现“新手引导”效果</a><span>2013-12-06</span></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
