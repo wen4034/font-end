@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ad {
+            margin: 0 auto;
+            width: 962px;
+            height: 0;
+        }
+
+        .content {
+            margin: 0 auto;
+            width: 962px;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            var ad = document.getElementById('ad');
+            var adHeight = 386; //图片高度
+            aduUfold();
+
+            function adShrink() {
+                ad.style.height = (ad.offsetHeight - 1) + 'px';
+                if (ad.offsetHeight > 0) {
+                    setTimeout(adShrink, 1);
+
+                }
+            }
+
+            function aduUfold() {
+                ad.style.height = (ad.offsetHeight + 1) + 'px';
+                if (ad.offsetHeight >= adHeight) {
+                    setTimeout(adShrink, 2000);
+                } else {
+                    setTimeout(aduUfold, 1);
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div class="ad" id="ad">
+    <img width="962" height="386" src="img/ad.png">
+</div>
+<div class="content">
+    <img src="img/数字商品-10-23.jpg">
+</div>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        .top {
+            height: 60px;
+            background-color: rgb(42, 44, 46);;
+        }
+
+        .nav {
+            margin: 0 auto;
+            width: 968px;
+            height: 60px;
+            position: relative;
+        }
+
+        .log {
+            display: inline-block;
+            background: url("img/logo_index.png") no-repeat;
+            height: 80px;
+            width: 220px;
+            position: absolute;
+            left: 0;
+            z-index: 2;
+        }
+
+        .nav-item {
+            display: inline-block;
+            list-style: none;
+            margin-left: 220px;
+            padding-left: 40px;
+            height: 60px;
+        }
+
+        .nav-item li {
+            float: left;
+            height: 60px;
+            line-height: 60px;
+            margin-right: 20px;
+        }
+
+        .nav-item li a {
+            color: #B5BDC0;
+            text-decoration: none;
+        }
+
+        .nav-item li a:hover {
+            color: #FFFFFF;
+        }
+
+        .login {
+            float: right;
+            height: 40px;
+            line-height: 40px;
+            width: 100px;
+            background: rgb(201, 57, 74);
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .login:hover {
+            background-color: #FF3030;
+        }
+
+        .carousel {
+            overflow: hidden;
+            position: relative;
+            height: 600px;
+        }
+
+        .list {
+            position: absolute;
+            width: 5000px;
+        }
+
+        .list img {
+            float: left;
+            display: block;
+            width: 1920px;
+            height: 600px;
+        }
+
+        .carousel-bottom {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+        }
+
+        .carousel-bottom span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            z-index: 2;
+            border: 1px solid #FFFFFF;
+            margin-right: 3px;
+        }
+
+        .on {
+            background-color: #FFFFFF;
+        }
+
+        .carousel-introduce {
+            position: absolute;
+            z-index: 2;
+            border-left: 4px solid #F36;
+            bottom: 80px;
+            background: rgba(68, 68, 68, 0.7);
+            left: 25%;
+            width: 380px;
+            color: #FFFFFF;
+            padding: 20px 0 20px 30px;
+        }
+
+        .carousel-introduce h2 {
+            font-size: 24px;
+            font-weight: 100;
+        }
+
+        .carousel-introduce h3 {
+            font-size: 40px;
+            font-weight: 100;
+        }
+
+        .carousel-introduce h4 {
+            font-size: 20px;
+            font-weight: 100;
+            margin-bottom: 15px;
+        }
+
+        .carousel-introduce a {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        a.enterbtn {
+            background-color: #c9394a;
+        }
+
+        a.learnmore {
+            background: url('img/sprit.png') no-repeat scroll 11px -74px #333;
+            text-indent: 30px;
+        }
+
+        a.enterbtn:hover {
+            background-color: #e35061;
+        }
+
+        a.learnmore:hover {
+            background-color: #666;
+        }
+
+        .publicity {
+            background: url('img/freshtit.png') left top no-repeat #2a2c2e;
+            width: 968px;
+            height: 100px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 167px;
+            text-indent: 8em;
+        }
+
+        .publicity span {
+            color: #8e999d;
+            font-size: 18px;
+        }
+
+        .freshcourseList {
+            width: 968px;
+            margin: 0px auto;
+            list-style: none;
+
+        }
+
+        .freshcourseList li {
+            float: left;
+            width: 300px;
+            margin: 0 34px 21px 0;
+            border-radius: 0 0 3px 3px;
+            box-shadow: 0 1px 1px #ccc;
+            background: #fff;
+            padding-bottom: 5px;
+        }
+
+        li.mr0 {
+            margin-right: 0;
+        }
+
+        .freshcourseList li a {
+            text-decoration: none;
+        }
+
+        .freshcourseList li a img {
+            margin: 10px 10px 0px 10px;
+            border-bottom: 4px solid #c9394a;
+        }
+
+        .freshcourseList li h5 {
+            color: #52585a;
+            font-family: '微软雅黑';
+            font-size: 16px;
+            font-weight: normal;
+            padding: 0 14px;
+
+        }
+
+        .freshcourseList li:hover h5 {
+            text-decoration: underline;
+            color: #c81623;
+        }
+
+        .freshcourseList li p {
+            font-size: 12px;
+            color: #B5BDC0;
+            padding: 0 6px 10px 14px;
+            height: 30px;
+            line-height: 1.6;
+            overflow: hidden;
+        }
+
+        .freshcourseList .tips {
+            padding: 0 14px;
+            font-size: 12px;
+            color: #8e999d;
+            overflow: hidden;
+            zoom: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="nav">
+        <a class="log" href="#"></a>
+        <ul class="nav-item">
+            <li>
+                <a href="#">免费课程</a>
+            </li>
+            <li>
+                <a href="#">实战课程</a>
+            </li>
+            <li>
+                <a href="#">手记</a>
+            </li>
+            <li>
+                <a href="#">猿记</a>
+            </li>
+        </ul>
+        <div class="login">
+            <a href="#">登录</a>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="carousel">
+        <div class="list" style="">
+            <img src="img/index_banner01.jpg">
+            <img src="img/banner-bg.png">
+            <img src="img/banner03.jpg">
+        </div>
+        <div class="carousel-bottom">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+        </div>
+        <div class="carousel-introduce">
+            <h2>换一种方式</h2>
+            <h3>来学习互联网编程</h3>
+            <h4>超酷的IT技术免费学习平台</h4>
+            <a class="enterbtn" href="#">进入</a>
+            <a class="learnmore" href="#">了解更多</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="publicity">
+            <span>每一节课都有一种新奇的感觉</span>
+        </div>
+        <ul class="freshcourseList">
+            <li>
+                <a href="#">
+                    <img width="280" height="170" alt="IT菜鸟逆袭指南（江湖篇）" title="IT菜鸟逆袭指南（江湖篇）"
+                         src="http://img.mukewang.com/530c732400013e5106000338-300-170.jpg">
+                    <h5>IT菜鸟逆袭指南（江湖篇）</h5>
+                    <p>屌爆了！码农逆袭有秘诀，看“挨踢（IT）”小菜鸟慕无忌如何成为技术“土豪”。</p>
+                    <div class="tips">
+                        <span class="l">16人参加</span>
+                        <span class="r">课程时长：1小时</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/course/view/id/46">
+                    <img width="280" height="170" alt="分享：HTML5离线应用实战演练"
+                         title="分享：HTML5离线应用实战演练"
+                         src="http://img.mukewang.com/5305da0d0001ab9306000338-300-170.jpg">
+                    <h5>分享：HTML5离线应用实战演练...</h5>
+                    <p>FT Web App是少数真正实现了离线阅读体验的移动应用之一，一起来剖析它的技术吧！ </p>
+                    <div class="tips">
+                        <span class="l">39人参加</span>
+                        <span class="r">课程时长：2小时</span>
+                    </div>
+                </a>
+            </li>
+            <li class="mr0">
+                <a href="/course/view/id/43">
+                    <img width="280" height="170" alt="分享：移动优先的跨终端 Web"
+                         title="分享：移动优先的跨终端 Web"
+                         src="http://img.mukewang.com/52e618d80001a7e106000338-300-170.jpg">
+                    <h5>分享：移动优先的跨终端 Web</h5>
+                    <p>不可多得的学习宝典，移动互联时代，您必须知道的跨终端技术。</p>
+                    <div class="tips"><span class="l">261人参加</span> <span class="r">课程时长：1小时</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="/course/view/id/41"><img width="280" height="170" alt="分享：响应式布局" title="分享：响应式布局"
+                                                  src="http://img.mukewang.com/52e5ed2300011d2706000338-300-170.jpg">
+                    <h5>分享：响应式布局</h5>
+                    <p>让网站兼容不同终端不再是梦，为解决移动互联网浏览而诞生。</p>
+                    <div class="tips">
+                        <span class="l">148人参加</span>
+                        <span class="r">课程时长：1小时</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="/course/view/id/42"><img width="280" height="170" alt="案例：表单美化" title="案例：表单美化"
+                                                  src="http://img.mukewang.com/52e5f6ef000114ab06000338-300-170.jpg">
+                    <h5>案例：表单美化</h5>
+                    <p>追求不凡，一次学习四类表单控件的美化，让所有平淡的表单控件瞬间美好起来！</p>
+                    <div class="tips">
+                        <span class="l">105人参加</span>
+                        <span class="r">课程时长：2小时</span>
+                    </div>
+                </a>
+            </li>
+            <li class="mr0">
+                <a href="/course/view/id/44">
+                    <img width="280" height="170" alt="案例：表单验证" title="案例：表单验证"
+                         src="http://img.mukewang.com/52e62c09000162fd06000338-300-170.jpg">
+                    <h5>案例：表单验证</h5>
+                    <p>技术升级必修内容！ 通过对学习输入框的验证，轻松掌握正则表达式的用法！</p>
+                    <div class="tips">
+                        <span class="l">81人参加</span>
+                        <span class="r">课程时长：1小时</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <a></a>
+    </div>
+</div>
+
+<div class="footer">
+
+</div>
+</body>
+</html>

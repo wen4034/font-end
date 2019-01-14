@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9bcb686-c166-4b94-8fc2-18f9c86b644c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js/gundong/gundong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/guanggao/img/ad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/guanggao/img/cur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/guanggao/img/数字商品-10-23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/guanggao/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/dmeo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/banner-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/footer_icon_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/freshtit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/index_banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/loginBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/logo_index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/sprit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tanchuceng/img/weibo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml___jb_tmp___" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +38,7 @@
     <session id="746062486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -53,11 +66,11 @@
           <entry key="css" value="38" />
           <entry key="gif" value="18" />
           <entry key="htm" value="3" />
-          <entry key="html" value="170" />
-          <entry key="jpg" value="26" />
+          <entry key="html" value="184" />
+          <entry key="jpg" value="29" />
           <entry key="js" value="15" />
           <entry key="php" value="2" />
-          <entry key="png" value="20" />
+          <entry key="png" value="36" />
           <entry key="ts" value="6" />
           <entry key="xml" value="3" />
         </counts>
@@ -65,8 +78,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="38" />
-          <entry key="HTML" value="173" />
-          <entry key="Image" value="64" />
+          <entry key="HTML" value="187" />
+          <entry key="Image" value="83" />
           <entry key="JavaScript" value="15" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="6" />
@@ -76,14 +89,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2247" />
-          <entry key="html" value="26881" />
+          <entry key="html" value="29661" />
           <entry key="js" value="235" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2247" />
-          <entry key="HTML" value="26881" />
+          <entry key="HTML" value="29661" />
           <entry key="JavaScript" value="235" />
         </counts>
       </usages-collector>
@@ -95,10 +108,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/gundong/gundong.html">
+        <entry file="file://$PROJECT_DIR$/js/tanchuceng/dmeo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+            <state relative-caret-position="209">
+              <caret line="206" column="31" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/lunbo/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="252" column="13" lean-forward="true" selection-start-line="252" selection-start-column="13" selection-end-line="252" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -116,7 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.des_infoContent</find>
       <find>logo</find>
       <find>translate</find>
       <find>copyright</find>
@@ -146,6 +172,7 @@
       <find>setInterval</find>
       <find>icur</find>
       <find>console</find>
+      <find>rgba</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/Functional expression/index.html" />
-        <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/Functional expression/recursion.js" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/Functional expression/closure.js" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/BOM/index.html" />
         <option value="$PROJECT_DIR$/js/Professional JavaScript for Web Developers/BOM/window.js" />
@@ -205,6 +230,8 @@
         <option value="$PROJECT_DIR$/js/daohang/daohang.html" />
         <option value="$PROJECT_DIR$/js/lunbo/index.html" />
         <option value="$PROJECT_DIR$/js/gundong/gundong.html" />
+        <option value="$PROJECT_DIR$/js/guanggao/index.html" />
+        <option value="$PROJECT_DIR$/js/tanchuceng/dmeo.html" />
       </list>
     </option>
   </component>
@@ -221,10 +248,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="149" />
-    <option name="y" value="435" />
+    <option name="x" value="268" />
+    <option name="y" value="253" />
     <option name="width" value="1455" />
-    <option name="height" value="583" />
+    <option name="height" value="935" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -258,6 +285,25 @@
               <item name="font-end" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="font-end" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="lunbo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="font-end" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tanchuceng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="font-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="font-end" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="tanchuceng" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -272,7 +318,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/work/font-end/js/digou/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547448276868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547468685260" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -281,19 +327,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\font-end\js\lunbo" />
-      <recent name="D:\work\font-end\js\sousuokuang\images" />
-      <recent name="D:\work\font-end\js\digou\images" />
-      <recent name="D:\work\font-end\js\falls" />
-      <recent name="D:\work\font-end\HTML_CSS\xiala_menu\image" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\font-end\js" />
       <recent name="D:\work\font-end\HTML_CSS\enterprise" />
       <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\enterprise" />
       <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS" />
       <recent name="C:\Users\wenheng\Desktop\work\font-end\HTML_CSS\business" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\font-end\js\tanchuceng\img" />
+      <recent name="D:\work\font-end\js\guanggao\img" />
+      <recent name="D:\work\font-end\js\lunbo" />
+      <recent name="D:\work\font-end\js\sousuokuang\images" />
+      <recent name="D:\work\font-end\js\digou\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -428,18 +474,18 @@
       <workItem from="1546943513292" duration="1391000" />
       <workItem from="1547193889827" duration="4221000" />
       <workItem from="1547367413817" duration="4673000" />
-      <workItem from="1547440879540" duration="2687000" />
+      <workItem from="1547440879540" duration="16511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384217000" />
+    <option name="totallyTimeSpent" value="398041000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="149" y="435" width="1455" height="583" extended-state="0" />
+    <frame x="268" y="253" width="1455" height="935" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.20071685" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.17849462" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.1359275" />
       <window_info id="Image Layers" order="3" />
@@ -504,70 +550,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/images/checkbox.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/images/invalid.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/images/province_sprites.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/images/red_asterisk.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/images/radiobutton.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/表单美化案例/文本框/Form(文本)/text.html" />
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/文本框/Form(文本)/text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="125" column="19" lean-forward="true" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/单选框/radio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="9" lean-forward="true" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/下拉列表/images/air.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/下拉列表/images/province_sprites.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/form/下拉列表/select_finished.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/变幻.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/menuok.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="87" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML_CSS/xiala_menu/image/slide-pannel_14.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -717,13 +699,6 @@
     <entry file="file://$PROJECT_DIR$/js/sousuokuang/images/hpc26.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/falls/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/sousuokuang/bing.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -735,16 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="16272" column="53" lean-forward="true" selection-start-line="16272" selection-start-column="53" selection-end-line="16272" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="173" column="52" lean-forward="true" selection-start-line="173" selection-start-column="52" selection-end-line="173" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,17 +727,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lunbo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/js/guanggao/img/数字商品-10-23.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/gundong/gundong.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+        <state relative-caret-position="-58">
+          <caret line="87" column="25" lean-forward="true" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/guanggao/img/cur.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/guanggao/img/ad.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/weibo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/sprit.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/freshtit.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/close.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/footer_icon_logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/logo_index.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/loginBg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/index_banner01.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/falls/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1957">
+          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/guanggao/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tabqiehuan/yanci_tab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="148" column="9" lean-forward="true" selection-start-line="148" selection-start-column="9" selection-end-line="148" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/img/banner-bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lunbo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="252" column="13" lean-forward="true" selection-start-line="252" selection-start-column="13" selection-end-line="252" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tanchuceng/dmeo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="206" column="31" selection-start-line="206" selection-start-column="31" selection-end-line="206" selection-end-column="31" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
