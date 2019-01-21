@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #demo {
+            position: relative;
+            margin: 50px;
+        }
+
+        #big_demo {
+            overflow: hidden;
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            border: 1px solid #ccc;
+            top: 0px;
+            left: 450px;
+            display: none;
+        }
+
+        #small_demo {
+            width: 400px;
+            height: 255px;
+            position: relative;
+            border: 1px solid #ccc;
+        }
+
+        #small_box {
+            height: 120px;
+            width: 160px;
+            position: absolute;
+            border: 1px solid #ccc;
+            background: #ffffcc;
+            opacity: 0.5;
+            display: none;
+        }
+
+        #big_demo img {
+            display: block;
+            position: absolute;
+        }
+    </style>
+
+
+    <script>
+
+        window.onload = function () {
+
+
+            var demo = document.getElementById('demo');
+            var small_demo = document.getElementById('small_demo');
+            var small_box = document.getElementById('small_box');
+
+            var big_demo = document.getElementById('big_demo');
+            var objBigBoxImage = big_demo.getElementsByTagName("img")[0];
+
+            small_demo.onmouseover = function (ev1) {
+                small_box.style.display = 'block';
+                big_demo.style.display = 'block';
+            }
+
+
+            small_demo.onmouseout = function (ev1) {
+                small_box.style.display = 'none';
+                big_demo.style.display = 'none';
+            }
+
+            small_demo.onmousemove = function (ev) {
+
+                var _even = ev || window.event;
+
+                var _left = _even.clientX - demo.offsetLeft - small_demo.offsetLeft - small_box.offsetWidth / 2;
+                var _top = _even.clientY - demo.offsetTop - small_demo.offsetTop - small_box.offsetHeight / 2;
+
+                if (_left < 0) {
+                    _left = 0
+                } else if (_left > (small_demo.offsetWidth - small_box.offsetWidth)) {
+                    _left = small_demo.offsetWidth - small_box.offsetWidth;
+                }
+
+
+                if (_top < 0) {
+                    _top = 0
+                } else if (_top > (small_demo.offsetHeight - small_box.offsetHeight)) {
+                    _top = small_demo.offsetHeight - small_box.offsetHeight;
+                }
+
+
+                small_box.style.left = _left + 'px';
+                small_box.style.top = _top + 'px';
+
+                var _powerX = _left / (small_demo.offsetWidth - small_box.offsetWidth);
+                var _powerY = _top / (small_demo.offsetHeight - small_box.offsetHeight);
+
+
+                objBigBoxImage.style.left = -_powerX * (objBigBoxImage.offsetWidth - big_demo.offsetWidth) + 'px';
+                objBigBoxImage.style.top = -_powerY * (objBigBoxImage.offsetHeight - big_demo.offsetHeight) + 'px';
+
+            }
+
+
+        }
+
+    </script>
+
+</head>
+<body>
+<div id="demo">
+    <div id="small_demo">
+        <div id="small_box"></div>
+        <img src="macbook-small.jpg">
+    </div>
+    <div id="big_demo">
+        <img src="macbook-big.jpg" style="left: 0px">
+    </div>
+</div>
+</body>
+</html>
