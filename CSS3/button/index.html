@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .box {
+            margin: 50px auto;
+            width: 800px;
+            height: 300px;
+            position: relative;
+        }
+
+        .link {
+            width: 205px;
+            float: left;
+            margin: 0 20px;
+
+        }
+
+        .link .icon {
+            display: inline-block;
+            width: 100%;
+            height: 205px;
+            transition: all 0.5s;
+        }
+
+        .icon:hover {
+            transform: rotate(360deg) scale(1.2, 1.2);
+        }
+
+        .link .button {
+            display: block;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 20px;
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            color: #2DCB70;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            background: url("images/allow.png") no-repeat 130px center;
+            margin: 0 auto;
+            transition: all 0.4s;
+            position: relative;
+        }
+
+        .button .line {
+            position: absolute;
+            background: none;
+            -moz-transition: ease 0.4s;
+            -o-transition: ease 0.4s;
+            -webkit-transition: ease 0.4s;
+            transition: ease 0.4s;
+        }
+
+        .button:hover .line {
+            background: #FFFFFF;
+        }
+
+        .button .line-top {
+            left: -100%;
+            top: -2px;
+            width: 0px;
+            height: 2px;
+        }
+
+        .button:hover .line-top {
+            left: -2px;
+            width: 100%;
+        }
+
+        .button .line-right {
+            left: 100%;
+            top: -100%;
+            width: 2px;
+            height: 0px;
+        }
+
+        .button:hover .line-right {
+            top: -2px;
+            height: 100%;
+        }
+
+        .button .line-bottom {
+            left: 200%;
+            top: 100%;
+            width: 0px;
+            height: 2px;
+        }
+
+        .button:hover .line-bottom {
+            left: -2px;
+            width: 100%;
+        }
+
+        .button .line-left {
+            left: -2px;
+            top: 200%;
+            width: 2px;
+            height: 0px;
+        }
+
+        .button:hover .line-left {
+            top: -2px;
+            height: 100%;
+        }
+
+        .link-mission-img {
+            background: url("images/mission.png") no-repeat center center;
+        }
+
+        .link-play-img {
+            background: url("images/play.png") no-repeat center center;
+        }
+
+        .link-touch-img {
+            background: url("images/touch.png") no-repeat center center;
+        }
+
+        .button:hover {
+            background-position-x: 140px;
+            border: 2px solid #fff;
+        }
+
+        .tip {
+            position: absolute;
+            background-color: #2DCB70;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+            border-radius: 5px;
+            top: 30%;
+            opacity: 0;
+            transition-property: top, opacity;
+            transition-duration: 0.4s;
+        }
+
+        .tip em {
+            font-style: normal;
+            color: #FFFFFF;
+        }
+
+        .tip span {
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            border-top: 7px solid #2DCB70;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            left: 48%;
+
+        }
+    </style>
+
+    <script>
+
+        window.onload = function (ev) {
+            var tip = document.getElementsByClassName('tip')[0];
+            var button = document.getElementsByClassName('button');
+
+            for (var i = 0; i < button.length; i++) {
+                button[i].onmouseover = function () {
+
+                    var data_tip = this.getAttribute('data-title');
+                    tip.getElementsByTagName('em')[0].innerHTML = data_tip;
+
+         
+                    var btn_width = this.offsetWidth - 5;
+                    var tip_width = tip.offsetWidth;
+
+                    tip.style.opacity = 1;
+                    tip.style.top = 50 + '%';
+                    tip.style.left = this.offsetLeft - ((tip_width - btn_width) / 2) + 'px';
+                }
+                button[i].onmouseout = function () {
+                    tip.style.opacity = 0;
+                    tip.style.top = 20 + '%';
+                }
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="link link-mission">
+        <span class="icon link-mission-img"></span>
+        <a class="button" href="#" data-title='My mission is clear'>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+            MISSION
+        </a>
+    </div>
+    <div class="link  link-play">
+        <span class="icon link-play-img"></span>
+        <a class="button" href="#" data-title='This is my playground'>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+            PLAY
+        </a>
+    </div>
+    <div class="link link-touch">
+        <span class="icon link-touch-img"></span>
+        <a class="button" href="#" data-title='This is my playground demos'>
+            <span class="line line-top"></span>
+            <span class="line line-right"></span>
+            <span class="line line-bottom"></span>
+            <span class="line line-left"></span>
+            TOUCH
+        </a>
+    </div>
+    <p class="tip"><em></em><span></span></p>
+</div>
+</body>
+</html>
